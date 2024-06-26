@@ -1,10 +1,8 @@
 @extends('dashboard.layouts.main')
-
 @section('container')
 <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
-    <h1 class="h2">Membuat Berita Baru</h1>
+    <h4 class="h4">Membuat Berita Baru</h4>
   </div>
-
   <form method="post" action="/dashboard/berita" class="mb-5" enctype="multipart/form-data">
     @csrf
     <div class="mb-3">
@@ -57,17 +55,6 @@
     </div>
     <button type="submit" class="btn btn-primary">Kirim</button>
   </form>
-
-  {{-- <script>
-    const title = document.querySelector('#title');
-    const slug = document.querySelector('#slug');
-
-    title.addEventListener('change', function(){
-      fetch('dashboard/berita/checkSlug?title=' + title.value)
-      .then(response => response.json())
-      .then(data => slug.value = data.slug)
-    })
-  </script> --}}
   <script>
     const title = document.querySelector("#title");
     const slug = document.querySelector("#slug");
@@ -77,10 +64,6 @@
         preslug = preslug.replace(/ /g,"-");
         slug.value = preslug.toLowerCase();
     });
-
-    // document.addEventListener('trix-file-accept', function(e) {
-    //   e.preventDefault();
-    // })
     document.addEventListener("trix-file-accept", function(event) {
             event.preventDefault();
             alert("File attachments are disabled.");

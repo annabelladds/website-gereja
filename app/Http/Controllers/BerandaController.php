@@ -1,8 +1,6 @@
 <?php
 
 namespace App\Http\Controllers;
-
-use Illuminate\Http\Request;
 use App\Models\Warta;
 
 class BerandaController extends Controller
@@ -11,10 +9,8 @@ class BerandaController extends Controller
     {
         return view('beranda', [
             "title" => "Beranda",
-            // "berita" => Berita::all()
             "active" => "beranda",
             "warta" => Warta::latest()->get()
-            // "warta" => Warta::all()
         ]);
     }
 
@@ -25,10 +21,4 @@ class BerandaController extends Controller
             "warta" => $wartadetail
         ]);
     }
-
-    // public function index()
-    // {
-    // $warta = Warta::all();
-    // return view('beranda', compact('warta'));
-    // }
 }

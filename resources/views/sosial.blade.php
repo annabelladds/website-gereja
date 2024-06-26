@@ -1,105 +1,118 @@
 @extends('layouts.main')
-
 @section('container')
 <section class="sosial-section">
     <div class="sosial">
-        <div class="row pertama-sosial py-4">
-          <!-- Baris Pertama -->
-          <div class="col text-center">
-            <img src="img/{{ $image }}" alt="Foto 1" class="sosial-gambar img-fluid mb-1">
-            <h6 class="sosial-judul">{{ $name }}</h6>
-            <p class="sosial-isi">{{ $jabatan }}</p>
-            <p class="sosial-isi">{{ $telp }}</p>
-            <p class="sosial-isi">{{ $sektor }}</p>
+        <div class="row py-4 justify-content-center">
+          <!-- Foto-foto Sosial -->
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3 text-center mb-3">
+            <div class="image-container">
+              <img src="img/J. Silaban.jpeg" alt="J. Silaban/ br. Bakkara" class="sosial-gambar img-fluid mb-1">
+            </div>
+            <h6 class="sosial-judul">J. Silaban/ br. Bakkara</h6>
+            <p class="sosial-isi">Ketua Sie. Sosial</p>
+            <p class="sosial-isi">082124247233</p>
+            <p class="sosial-isi">Sektor Kosambi II</p>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3 text-center mb-3">
+            <div class="image-container">
+              <img src="img/D. Manalu.jpg" alt="D. Manalu/br. Sinambela" class="sosial-gambar img-fluid mb-1">
+            </div>
+            <h6 class="sosial-judul">D. Manalu/br. Sinambela</h6>
+            <p class="sosial-isi">Kord. Sektor (Kosambi I)</p>
+            <p class="sosial-isi">081211612436</p>
+            <p class="sosial-isi">Sektor Kosambi I</p>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3 text-center mb-3">
+            <div class="image-container">
+              <img src="img/man.png" alt="F. Napitupulu/br. Simanjuntak" class="sosial-gambar img-fluid mb-1">
+            </div>
+            <h6 class="sosial-judul">F. Napitupulu/br. Simanjuntak</h6>
+            <p class="sosial-isi">Kord. Sektor (Kosambi I)</p>
+            <p class="sosial-isi">08**********</p>
+            <p class="sosial-isi">Sektor Kosambi I</p>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3 text-center mb-3">
+            <div class="image-container">
+              <img src="img/man.png" alt="F. Naibaho/br. Pasaribu" class="sosial-gambar img-fluid mb-1">
+            </div>
+            <h6 class="sosial-judul">F. Naibaho/br. Pasaribu</h6>
+            <p class="sosial-isi">Kord. Sektor (Kosambi II)</p>
+            <p class="sosial-isi">082113695536</p>
+            <p class="sosial-isi">Sektor Kosambi II</p>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3 text-center mb-3">
+            <div class="image-container">
+              <img src="img/R. Manik.jpeg" alt="R. Manik/br. Panjaitan" class="sosial-gambar img-fluid mb-1">
+            </div>
+            <h6 class="sosial-judul">R. Manik/br. Panjaitan</h6>
+            <p class="sosial-isi">Kord. Sektor (Kosambi II)</p>
+            <p class="sosial-isi">081280455868</p>
+            <p class="sosial-isi">Sektor Kosambi II</p>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3 text-center mb-3">
+            <div class="image-container">
+              <img src="img/N. Pakpahan.jpg" alt="N. Pakpahan/br. Sinaga" class="sosial-gambar img-fluid mb-1">
+            </div>
+            <h6 class="sosial-judul">N. Pakpahan/br. Sinaga</h6>
+            <p class="sosial-isi">Kord. Sektor (Kosambi III)</p>
+            <p class="sosial-isi">085284548476</p>
+            <p class="sosial-isi">Sektor Kosambi III</p>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3 text-center mb-3">
+            <div class="image-container">
+              <img src="img/man.png" alt="C. Purba/br. Hutasoit" class="sosial-gambar img-fluid mb-1">
+            </div>
+            <h6 class="sosial-judul">C. Purba/br. Hutasoit</h6>
+            <p class="sosial-isi">Kord. Sektor (Kosambi III)</p>
+            <p class="sosial-isi">08**********</p>
+            <p class="sosial-isi">Sektor Kosambi III</p>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3 text-center mb-3">
+            <div class="image-container">
+              <img src="img/man.png" alt="I. Situmeang/br. Simbolon" class="sosial-gambar img-fluid mb-1">
+            </div>
+            <h6 class="sosial-judul">I. Situmeang/br. Simbolon</h6>
+            <p class="sosial-isi">Kord. Sektor (M. Prakarsa I)</p>
+            <p class="sosial-isi">08**********</p>
+            <p class="sosial-isi">Sektor M. Prakarsa I</p>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3 text-center mb-3">
+            <div class="image-container">
+              <img src="img/man.png" alt="M. H. Siagian/br. Malau" class="sosial-gambar img-fluid mb-1">
+            </div>
+            <h6 class="sosial-judul">M. H. Siagian/br. Malau</h6>
+            <p class="sosial-isi">Kord. Sektor (M. Prakarsa II)</p>
+            <p class="sosial-isi">08**********</p>
+            <p class="sosial-isi">Sektor M. Prakarsa II</p>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3 text-center mb-3">
+            <div class="image-container">
+              <img src="img/M. Simanungkalit.jpg" alt="M. Simanungkalit/br. Samosir" class="sosial-gambar img-fluid mb-1">
+            </div>
+            <h6 class="sosial-judul">M. Simanungkalit/br. Samosir</h6>
+            <p class="sosial-isi">Kord. Sektor (M. Prakarsa III)</p>
+            <p class="sosial-isi">08**********</p>
+            <p class="sosial-isi">Sektor M. Prakarsa III</p>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3 text-center mb-3">
+            <div class="image-container">
+              <img src="img/man.png" alt="G. Gurning/br. Marbun" class="sosial-gambar img-fluid mb-1">
+            </div>
+            <h6 class="sosial-judul">G. Gurning/br. Marbun</h6>
+            <p class="sosial-isi">Kord. Sektor (Terangsari I)</p>
+            <p class="sosial-isi">08**********</p>
+            <p class="sosial-isi">Sektor Terangsari I</p>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3 text-center mb-3">
+            <div class="image-container">
+              <img src="img/man.png" alt="D. Siahaan/br. Manurung" class="sosial-gambar img-fluid mb-1">
+            </div>
+            <h6 class="sosial-judul">D. Siahaan/br. Manurung</h6>
+            <p class="sosial-isi">Kord. Sektor (Terangsari II)</p>
+            <p class="sosial-isi">08**********</p>
+            <p class="sosial-isi">Sektor Terangsari II</p>
           </div>
         </div>
-        <div class="row kedua-sosial py-4">
-          <!-- Baris Kedua -->
-          <div class="col">
-            <img src="img/{{ $image2 }}" alt="Foto 2" class="sosial-gambar img-fluid mb-1">
-            <h6 class="sosial-judul">{{ $name2 }}</h6>
-            <p class="sosial-isi">{{ $jabatan2 }}</p>
-            <p class="sosial-isi">{{ $telp2 }}</p>
-            <p class="sosial-isi">{{ $sektor2 }}</p>
-          </div>
-          <div class="col">
-            <img src="img/{{ $image3 }}" alt="Foto 3" class="sosial-gambar img-fluid mb-1">
-            <h6 class="sosial-judul">{{ $name3 }}</h6>
-            <p class="sosial-isi">{{ $jabatan3 }}</p>
-            <p class="sosial-isi">{{ $telp3 }}</p>
-            <p class="sosial-isi">{{ $sektor3 }}</p>
-          </div>
-          <div class="col">
-            <img src="img/{{ $image4 }}" alt="Foto 4" class="sosial-gambar img-fluid mb-1">
-            <h6 class="sosial-judul">{{ $name4 }}</h6>
-            <p class="sosial-isi">{{ $jabatan4 }}</p>
-            <p class="sosial-isi">{{ $telp4 }}</p>
-            <p class="sosial-isi">{{ $sektor4 }}</p>
-          </div>
-          <div class="col">
-            <img src="img/{{ $image5 }}" alt="Foto 5" class="sosial-gambar img-fluid mb-1">
-            <h6 class="sosial-judul">{{ $name5 }}</h6>
-            <p class="sosial-isi">{{ $jabatan5 }}</p>
-            <p class="sosial-isi">{{ $telp5 }}</p>
-            <p class="sosial-isi">{{ $sektor5 }}</p>
-          </div>
-          <div class="col">
-            <img src="img/{{ $image6 }}" alt="Foto 6" class="sosial-gambar img-fluid mb-1">
-            <h6 class="sosial-judul">{{ $name6 }}</h6>
-            <p class="sosial-isi">{{ $jabatan6 }}</p>
-            <p class="sosial-isi">{{ $telp6 }}</p>
-            <p class="sosial-isi">{{ $sektor6 }}</p>
-          </div>
-          <div class="col">
-            <img src="img/{{ $image7 }}" alt="Foto 7" class="sosial-gambar img-fluid mb-1">
-            <h6 class="sosial-judul">{{ $name7 }}</h6>
-            <p class="sosial-isi">{{ $jabatan7 }}</p>
-            <p class="sosial-isi">{{ $telp7 }}</p>
-            <p class="sosial-isi">{{ $sektor7 }}</p>
-        </div>
-      </div>
-        <div class="row ketiga-sosial py-4">
-          <!-- Baris Ketiga -->
-          <div class="col">
-            <img src="img/{{ $image8 }}" alt="Foto 8" class="sosial-gambar img-fluid mb-1">
-            <h6 class="sosial-judul">{{ $name8 }}</h6>
-            <p class="sosial-isi">{{ $jabatan8 }}</p>
-            <p class="sosial-isi">{{ $telp8 }}</p>
-            <p class="sosial-isi">{{ $sektor8 }}</p>
-          </div>
-          <div class="col">
-            <img src="img/{{ $image9 }}" alt="Foto 9" class="sosial-gambar img-fluid mb-1">
-            <h6 class="sosial-judul">{{ $name9 }}</h6>
-            <p class="sosial-isi">{{ $jabatan9 }}</p>
-            <p class="sosial-isi">{{ $telp9 }}</p>
-            <p class="sosial-isi">{{ $sektor9 }}</p>
-          </div>
-          <div class="col">
-            <img src="img/{{ $image10 }}" alt="Foto 10" class="sosial-gambar img-fluid mb-1">
-            <h6 class="sosial-judul">{{ $name10 }}</h6>
-            <p class="sosial-isi">{{ $jabatan10 }}</p>
-            <p class="sosial-isi">{{ $telp10 }}</p>
-            <p class="sosial-isi">{{ $sektor10 }}</p>
-          </div>
-          <div class="col">
-            <img src="img/{{ $image11 }}" alt="Foto 11" class="sosial-gambar img-fluid mb-1">
-            <h6 class="sosial-judul">{{ $name11 }}</h6>
-            <p class="sosial-isi">{{ $jabatan11 }}</p>
-            <p class="sosial-isi">{{ $telp11 }}</p>
-            <p class="sosial-isi">{{ $sektor11 }}</p>
-          </div>
-          <div class="col">
-            <img src="img/{{ $image12 }}" alt="Foto 12" class="sosial-gambar img-fluid mb-1">
-            <h6 class="sosial-judul">{{ $name12 }}</h6>
-            <p class="sosial-isi">{{ $jabatan12 }}</p>
-            <p class="sosial-isi">{{ $telp12 }}</p>
-            <p class="sosial-isi">{{ $sektor12 }}</p>
-          </div>
-        </div>
-          {{-- <div class="row">
-            <!-- Baris Keempat -->
-            
-            </div> --}}
 </section>
 @endsection
 
@@ -109,41 +122,77 @@
         width: 100% !important;
         text-align: center;
         padding-top: 8%;
-        padding-bottom: 4%;
-        /* justify-content: center !important;
-        align-content: center !important; */
+        padding-bottom: 2%;
     }
 
     .sosial-judul {
         margin-bottom: 1px !important;
-        /* margin-top: 1px !important; */
         font-weight: bold !important;
-        text-align: center;
     }
 
     .sosial-isi{
         margin-bottom: 1px !important;
         font-size: 14px;
-        text-align: center;
     }
 
     .sosial-gambar {
         width: 150px !important;
         height: 210px !important;
+        object-fit: cover;
     }
 
-    .pertama-sosial {
-      padding-right: 43% !important;
-      padding-left: 43% !important;
+    .image-container {
+        overflow: hidden;
+        max-width: 100%;
+        max-height: 210px;
     }
 
-    .kedua-sosial {
-      padding-right: 7% !important;
-      padding-left: 7% !important;
+    @media (max-width: 576px) {
+        .kedua-sosial .col, .row .col {
+            flex: 0 0 100%;
+            max-width: 100%;
+            margin-bottom: 15px;
+        }
+
+        .sosial {
+        padding-top: 18% !important;
+        padding-bottom: 2%;
+    }
     }
 
-    .ketiga-sosial {
-      padding-right: 14% !important;
-      padding-left: 14% !important;
+    @media (min-width: 577px) and (max-width: 768px) {
+        .kedua-sosial .col {
+            flex: 0 0 50%;
+            max-width: 50%;
+        }
+
+        .sosial {
+        padding-top: 16% !important;
+        padding-bottom: 2%;
+    }
+    }
+
+    @media (min-width: 769px) and (max-width: 992px) {
+        .kedua-sosial .col, .row .col {
+            flex: 0 0 33.3333%;
+            max-width: 33.3333%;
+        }
+
+        .sosial {
+        padding-top: 14% !important;
+        padding-bottom: 2%;
+    }
+    }
+
+    @media (min-width: 993px) {
+        .kedua-sosial .col {
+            flex: 0 0 25%;
+            max-width: 25%;
+        }
+    }
+
+    .row {
+        margin-right: 0 !important;
+        margin-left: 0 !important;
     }
 </style>

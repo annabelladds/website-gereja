@@ -1,7 +1,6 @@
 <?php
 
 namespace App\Models;
-
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Cviebrock\EloquentSluggable\Sluggable;
@@ -9,8 +8,6 @@ use Cviebrock\EloquentSluggable\Sluggable;
 class Berita extends Model
 {
     use HasFactory, Sluggable;
-
-    // protected $fillable = ['title', 'excerpt', 'body'];
     protected $guarded = ['id'];
     protected $with = ['kategori','author'];
 
@@ -51,10 +48,5 @@ class Berita extends Model
             ]
         ];
     }
-
-    // public function kategori()
-    // {
-    //     return $this->belongsTo(Kategori::class);
-    // }
 }
 

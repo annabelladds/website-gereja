@@ -1,139 +1,179 @@
 @extends('layouts.main')
-
 @section('container')
 <section class="parhalado-section">
     <div class="parhalado">
-        <div class="row pertama-parhalado py-4">
-          <!-- Baris Pertama -->
-          <div class="col- text-center">
-            <img src="img/{{ $image }}" alt="Foto 1" class="parhalado-gambar img-fluid mb-1">
-            <h6 class="parhalado-judul">{{ $name }}</h6>
-            <p class="parhalado-isi">{{ $jabatan }}</p>
-            <p class="parhalado-isi">{{ $telp }}</p>
+        <div class="row py-4 justify-content-center">
+          <!-- Foto-foto Parhalado -->
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3 text-center mb-3">
+            <div class="image-container">
+              <img src="img/Pdt. Ressort.jpeg" alt="Pdt. R. Nababan, S.Th., M.M" class="parhalado-gambar img-fluid mb-1">
+            </div>
+            <h6 class="parhalado-judul">Pdt. R. Nababan, S.Th., M.M</h6>
+            <p class="parhalado-isi">Pendeta HKBP Ressort Cikampek</p>
+            <p class="parhalado-isi">081376681871</p>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3 text-center mb-3">
+            <div class="image-container">
+              <img src="img/Pdt. Manurung.jpeg" alt="Pdt. D. Manurung, S.Th" class="parhalado-gambar img-fluid mb-1">
+            </div>
+            <h6 class="parhalado-judul">Pdt. D. Manurung, S.Th</h6>
+            <p class="parhalado-isi">Uluan HKBP Sultan Mazmur Pancawati</p>
+            <p class="parhalado-isi">085276327669</p>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3 text-center mb-3">
+            <div class="image-container">
+              <img src="img/St. S. H. Sitompul.jpeg" alt="St. S. H. Sitompul" class="parhalado-gambar img-fluid mb-1">
+            </div>
+            <h6 class="parhalado-judul">St. S. H. Sitompul</h6>
+            <p class="parhalado-isi">Ketua Parartaon</p>
+            <p class="parhalado-isi">081212703692</p>
+            <p class="parhalado-isi">Sektor M. Prakarsa</p>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3 text-center mb-3">
+            <div class="image-container">
+              <img src="img/St. Hutahaen.jpeg" alt="St. R. Hutahaen" class="parhalado-gambar img-fluid mb-1">
+            </div>
+            <h6 class="parhalado-judul">St. R. Hutahaen</h6>
+            <p class="parhalado-isi">Sekretaris Huria</p>
+            <p class="parhalado-isi">082125919992</p>
+            <p class="parhalado-isi">Sektor Kosambi</p>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3 text-center mb-3">
+            <div class="image-container">
+              <img src="img/Inang br. Munte.jpeg" alt="Ny. A. Lubis br. Munthe" class="parhalado-gambar img-fluid mb-1">
+            </div>
+            <h6 class="parhalado-judul">Ny. A. Lubis br. Munthe</h6>
+            <p class="parhalado-isi">Staff Admin</p>
+            <p class="parhalado-isi">08119950314</p>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3 text-center mb-3">
+            <div class="image-container">
+              <img src="img/St. Aritonang.jpeg" alt="St. W. Aritonang" class="parhalado-gambar img-fluid mb-1">
+            </div>
+            <h6 class="parhalado-judul">St. W. Aritonang</h6>
+            <p class="parhalado-isi">Bendahara Huria</p>
+            <p class="parhalado-isi">081283369054</p>
+            <p class="parhalado-isi">Sektor Kosambi</p>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3 text-center mb-3">
+            <div class="image-container">
+              <img src="img/St. Panjaitan.jpeg" alt="St. M. Panjaitan" class="parhalado-gambar img-fluid mb-1">
+            </div>
+            <h6 class="parhalado-judul">St. M. Panjaitan</h6>
+            <p class="parhalado-isi">Anggota Parartaon</p>
+            <p class="parhalado-isi">081281908877</p>
+            <p class="parhalado-isi">Sektor Kosambi</p>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3 text-center mb-3">
+            <div class="image-container">
+              <img src="img/St. br. Nainggolan.jpeg" alt="St. R. br. Nainggolan" class="parhalado-gambar img-fluid mb-1">
+            </div>
+            <h6 class="parhalado-judul">St. R. br. Nainggolan</h6>
+            <p class="parhalado-isi">Anggota Parartaon</p>
+            <p class="parhalado-isi">081387603842</p>
+            <p class="parhalado-isi">Sektor Kosambi</p>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3 text-center mb-3">
+            <div class="image-container">
+              <img src="img/St. T. B. Sitompul.jpeg" alt="St. T. B. Sitompul" class="parhalado-gambar img-fluid mb-1">
+            </div>
+            <h6 class="parhalado-judul">St. T. B. Sitompul</h6>
+            <p class="parhalado-isi">Dewan Koinonia</p>
+            <p class="parhalado-isi">089506042760</p>
+            <p class="parhalado-isi">Sektor M. Prakarsa</p>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3 text-center mb-3">
+            <div class="image-container">
+              <img src="img/St. Simaremare.jpeg" alt="St. R. Simaremare" class="parhalado-gambar img-fluid mb-1">
+            </div>
+            <h6 class="parhalado-judul">St. R. Simaremare</h6>
+            <p class="parhalado-isi">Dewan Marturia</p>
+            <p class="parhalado-isi">081315214822</p>
+            <p class="parhalado-isi">Sektor Terangsari</p>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3 text-center mb-3">
+            <div class="image-container">
+              <img src="img/St. Tambunan.jpeg" alt="St. J. Tambunan" class="parhalado-gambar img-fluid mb-1">
+            </div>
+            <h6 class="parhalado-judul">St. J. Tambunan</h6>
+            <p class="parhalado-isi">Dewan Diakonia</p>
+            <p class="parhalado-isi">082112658801</p>
+            <p class="parhalado-isi">Sektor Kosambi</p>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3 text-center mb-3">
+            <div class="image-container">
+              <img src="img/St. Sinambela.jpeg" alt="St. E. Sinambela" class="parhalado-gambar img-fluid mb-1">
+            </div>
+            <h6 class="parhalado-judul">St. E. Sinambela</h6>
+            <p class="parhalado-isi">081382956637</p>
+            <p class="parhalado-isi">Sektor Terangsari</p>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3 text-center mb-3">
+            <div class="image-container">
+              <img src="img/St. Manurung.jpeg" alt="St. H. Manurung" class="parhalado-gambar img-fluid mb-1">
+            </div>
+            <h6 class="parhalado-judul">St. H. Manurung</h6>
+            <p class="parhalado-isi">081388718429</p>
+            <p class="parhalado-isi">Sektor Terangsari</p>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3 text-center mb-3">
+            <div class="image-container">
+              <img src="img/Mama.jpeg" alt="St. H. br Tampubolon" class="parhalado-gambar img-fluid mb-1">
+            </div>
+            <h6 class="parhalado-judul">St. H. br Tampubolon</h6>
+            <p class="parhalado-isi">082115141040</p>
+            <p class="parhalado-isi">Sektor Kosambi</p>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3 text-center mb-3">
+            <div class="image-container">
+              <img src="img/St. Simanjuntak.jpeg" alt="St. M. Simanjuntak" class="parhalado-gambar img-fluid mb-1">
+            </div>
+            <h6 class="parhalado-judul">St. M. Simanjuntak</h6>
+            <p class="parhalado-isi">088294527038</p>
+            <p class="parhalado-isi">Sektor M. Prakarsa</p>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3 text-center mb-3">
+            <div class="image-container">
+              <img src="img/St. Marbun.jpeg" alt="St. K. Marbun" class="parhalado-gambar img-fluid mb-1">
+            </div>
+            <h6 class="parhalado-judul">St. K. Marbun</h6>
+            <p class="parhalado-isi">081286984013</p>
+            <p class="parhalado-isi">Sektor M. Prakarsa</p>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3 text-center mb-3">
+            <div class="image-container">
+              <img src="img/St. Siahaan.jpeg" alt="St. R. Siahaan" class="parhalado-gambar img-fluid mb-1">
+            </div>
+            <h6 class="parhalado-judul">St. R. Siahaan</h6>
+            <p class="parhalado-isi">081211612436</p>
+            <p class="parhalado-isi">Sektor Kosambi</p>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3 text-center mb-3">
+            <div class="image-container">
+              <img src="img/R. Gultom.jpeg" alt="R. Gultom" class="parhalado-gambar img-fluid mb-1">
+            </div>
+            <h6 class="parhalado-judul">R. Gultom</h6>
+            <p class="parhalado-isi">Ketua Badan Audit</p>
+            <p class="parhalado-isi">081310385097</p>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3 text-center mb-3">
+            <div class="image-container">
+              <img src="img/St. Samosir.jpeg" alt="St. W. Samosir" class="parhalado-gambar img-fluid mb-1">
+            </div>
+            <h6 class="parhalado-judul">St. W. Samosir</h6>
+            <p class="parhalado-isi">Anggota Badan Audit</p>
+            <p class="parhalado-isi">081388317763</p>
+            <p class="parhalado-isi">Sektor M. Prakarsa</p>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3 text-center mb-3">
+            <div class="image-container">
+              <img src="img/A. Lubis.jpeg" alt="A. Lubis" class="parhalado-gambar img-fluid mb-1">
+            </div>
+            <h6 class="parhalado-judul">A. Lubis</h6>
+            <p class="parhalado-isi">Anggota Badan Audit</p>
+            <p class="parhalado-isi">081315813413</p>
           </div>
         </div>
-        <div class="row kedua-parhalado py-4">
-        {{-- <div class="row px-2 pb-4"> --}}
-          <!-- Baris Kedua -->
-          <div class="col">
-            <img src="img/{{ $image7 }}" alt="Foto 7" class="parhalado-gambar img-fluid mb-1">
-            <h6 class="parhalado-judul">{{ $name7 }}</h6>
-            <p class="parhalado-isi">{{ $jabatan7 }}</p>
-            <p class="parhalado-isi">{{ $telp7 }}</p>
-            <p class="parhalado-isi">{{ $sektor7 }}</p>
-          </div>
-          <div class="col">
-            <img src="img/{{ $image2 }}" alt="Foto 2" class="parhalado-gambar img-fluid mb-1">
-            <h6 class="parhalado-judul">{{ $name2 }}</h6>
-            <p class="parhalado-isi">{{ $jabatan2 }}</p>
-            <p class="parhalado-isi">{{ $telp2 }}</p>
-            <p class="parhalado-isi">{{ $sektor2 }}</p>
-          </div>
-          <div class="col">
-            <img src="img/{{ $image3 }}" alt="Foto 3" class="parhalado-gambar img-fluid mb-1">
-            <h6 class="parhalado-judul">{{ $name3 }}</h6>
-            <p class="parhalado-isi">{{ $jabatan3 }}</p>
-            <p class="parhalado-isi">{{ $telp3 }}</p>
-            <p class="parhalado-isi">{{ $sektor3 }}</p>
-          </div>
-          <div class="col">
-            <img src="img/{{ $image8 }}" alt="Foto 8" class="parhalado-gambar img-fluid mb-1">
-            <h6 class="parhalado-judul">{{ $name8 }}</h6>
-            <p class="parhalado-isi">{{ $jabatan8 }}</p>
-            <p class="parhalado-isi">{{ $telp8 }}</p>
-            <p class="parhalado-isi">{{ $sektor8 }}</p>
-          </div>
-          <div class="col">
-            <img src="img/{{ $image8 }}" alt="Foto 8" class="parhalado-gambar img-fluid mb-1">
-            <h6 class="parhalado-judul">{{ $name8 }}</h6>
-            <p class="parhalado-isi">{{ $jabatan8 }}</p>
-            <p class="parhalado-isi">{{ $telp8 }}</p>
-            <p class="parhalado-isi">{{ $sektor8 }}</p>
-          </div>
-        </div>
-        <div class="row ketiga-parhalado py-4">
-          {{-- <div class="row px-2 pb-4"> --}}
-            <!-- Baris Ketiga -->
-            <div class="col">
-              <img src="img/{{ $image4 }}" alt="Foto 4" class="parhalado-gambar img-fluid mb-1">
-              <h6 class="parhalado-judul">{{ $name4 }}</h6>
-              <p class="parhalado-isi">{{ $jabatan4 }}</p>
-              <p class="parhalado-isi">{{ $telp4 }}</p>
-              <p class="parhalado-isi">{{ $sektor4 }}</p>
-            </div>
-            <div class="col">
-              <img src="img/{{ $image5 }}" alt="Foto 5" class="parhalado-gambar img-fluid mb-1">
-              <h6 class="parhalado-judul">{{ $name5 }}</h6>
-              <p class="parhalado-isi">{{ $jabatan5 }}</p>
-              <p class="parhalado-isi">{{ $telp5 }}</p>
-              <p class="parhalado-isi">{{ $sektor5 }}</p>
-            </div>
-            <div class="col">
-              <img src="img/{{ $image6 }}" alt="Foto 6" class="parhalado-gambar img-fluid mb-1">
-              <h6 class="parhalado-judul">{{ $name6 }}</h6>
-              <p class="parhalado-isi">{{ $jabatan6 }}</p>
-              <p class="parhalado-isi">{{ $telp6 }}</p>
-              <p class="parhalado-isi">{{ $sektor6 }}</p>
-            </div>
-          {{-- </div> --}}
-          </div>
-          <div class="row keempat-parhalado py-4">
-              <!-- Baris Ketiga -->
-              <div class="col">
-                <img src="img/{{ $image4 }}" alt="Foto 4" class="parhalado-gambar img-fluid mb-1">
-                <h6 class="parhalado-judul">{{ $name4 }}</h6>
-                <p class="parhalado-isi">{{ $jabatan4 }}</p>
-                <p class="parhalado-isi">{{ $telp4 }}</p>
-                <p class="parhalado-isi">{{ $sektor4 }}</p>
-              </div>
-              <div class="col">
-                <img src="img/{{ $image5 }}" alt="Foto 5" class="parhalado-gambar img-fluid mb-1">
-                <h6 class="parhalado-judul">{{ $name5 }}</h6>
-                <p class="parhalado-isi">{{ $jabatan5 }}</p>
-                <p class="parhalado-isi">{{ $telp5 }}</p>
-                <p class="parhalado-isi">{{ $sektor5 }}</p>
-              </div>
-              <div class="col">
-                <img src="img/{{ $image6 }}" alt="Foto 6" class="parhalado-gambar img-fluid mb-1">
-                <h6 class="parhalado-judul">{{ $name6 }}</h6>
-                <p class="parhalado-isi">{{ $jabatan6 }}</p>
-                <p class="parhalado-isi">{{ $telp6 }}</p>
-                <p class="parhalado-isi">{{ $sektor6 }}</p>
-              </div>
-              <div class="col">
-                <img src="img/{{ $image6 }}" alt="Foto 6" class="parhalado-gambar img-fluid mb-1">
-                <h6 class="parhalado-judul">{{ $name6 }}</h6>
-                <p class="parhalado-isi">{{ $jabatan6 }}</p>
-                <p class="parhalado-isi">{{ $telp6 }}</p>
-                <p class="parhalado-isi">{{ $sektor6 }}</p>
-              </div>
-            {{-- </div> --}}
-            </div>
-          <div class="row ketiga-parhalado py-4">
-              <!-- Baris Ketiga -->
-              <div class="col">
-                <img src="img/{{ $image8 }}" alt="Foto 8" class="parhalado-gambar img-fluid mb-1">
-                <h6 class="parhalado-judul">{{ $name8 }}</h6>
-                <p class="parhalado-isi">{{ $jabatan8 }}</p>
-                <p class="parhalado-isi">{{ $telp8 }}</p>
-                <p class="parhalado-isi">{{ $sektor8 }}</p>
-              </div>
-              <div class="col">
-                <img src="img/{{ $image8 }}" alt="Foto 8" class="parhalado-gambar img-fluid mb-1">
-                <h6 class="parhalado-judul">{{ $name8 }}</h6>
-                <p class="parhalado-isi">{{ $jabatan8 }}</p>
-                <p class="parhalado-isi">{{ $telp8 }}</p>
-                <p class="parhalado-isi">{{ $sektor8 }}</p>
-              </div>
-              <div class="col">
-                <img src="img/{{ $image8 }}" alt="Foto 8" class="parhalado-gambar img-fluid mb-1">
-                <h6 class="parhalado-judul">{{ $name8 }}</h6>
-                <p class="parhalado-isi">{{ $jabatan8 }}</p>
-                <p class="parhalado-isi">{{ $telp8 }}</p>
-                <p class="parhalado-isi">{{ $sektor8 }}</p>
-              </div>
-            {{-- </div> --}}
-            </div>
 </section>
 @endsection
 
@@ -143,240 +183,77 @@
         width: 100% !important;
         text-align: center;
         padding-top: 8%;
-        padding-bottom: 4%;
-        /* justify-content: center !important;
-        align-content: center !important; */
+        padding-bottom: 2%;
     }
 
     .parhalado-judul {
         margin-bottom: 1px !important;
-        /* margin-top: 1px !important; */
         font-weight: bold !important;
-        text-align: center;
     }
 
     .parhalado-isi{
         margin-bottom: 1px !important;
         font-size: 14px;
-        text-align: center;
     }
 
     .parhalado-gambar {
         width: 150px !important;
         height: 210px !important;
-        /* padding-right: 1px !important;
-        padding-left: 1px !important; */
+        object-fit: cover;
     }
 
-    .pertama-parhalado {
-      padding-right: 43% !important;
-      padding-left: 43% !important;
+    .image-container {
+        overflow: hidden;
+        max-width: 100%;
+        max-height: 210px;
     }
 
-    .kedua-parhalado {
-      padding-right: 14% !important;
-      padding-left: 14% !important;
+    @media (max-width: 576px) {
+        .kedua-parhalado .col, .row .col {
+            flex: 0 0 100%;
+            max-width: 100%;
+            margin-bottom: 15px;
+        }
+
+        .parhalado {
+        padding-top: 18% !important;
+        padding-bottom: 2%;
+    }
     }
 
-    .ketiga-parhalado {
-      padding-right: 28% !important;
-      padding-left: 28% !important;
+    @media (min-width: 577px) and (max-width: 768px) {
+        .kedua-parhalado .col {
+            flex: 0 0 50%;
+            max-width: 50%;
+        }
+
+        .parhalado {
+        padding-top: 16% !important;
+        padding-bottom: 2%;
+    }
     }
 
-    .keempat-parhalado {
-      padding-right: 22% !important;
-      padding-left: 22% !important;
+    @media (min-width: 769px) and (max-width: 992px) {
+        .kedua-parhalado .col, .row .col {
+            flex: 0 0 33.3333%;
+            max-width: 33.3333%;
+        }
+
+        .parhalado {
+        padding-top: 14% !important;
+        padding-bottom: 2%;
+    }
+    }
+
+    @media (min-width: 993px) {
+        .kedua-parhalado .col {
+            flex: 0 0 25%;
+            max-width: 25%;
+        }
+    }
+
+    .row {
+        margin-right: 0 !important;
+        margin-left: 0 !important;
     }
 </style>
-
-
-
-
-{{-- @extends('layouts.main')
-
-@section('container')
-<section class="parhalado-section">
-  <div class="parhalado container">
-    <section class="parhalado-section">
-        <!-- Baris 1 -->
-        <div class="row justify-content-center">
-            <div class="col-md-3 col-sm-6 text-center mb-4">
-                <img src="img/{{ $image }}" alt="Foto 1" class="parhalado-gambar img-fluid mb-1">
-                <h6 class="parhalado-judul">{{ $name }}</h6>
-                <p class="parhalado-isi">{{ $jabatan }}</p>
-                <p class="parhalado-isi">{{ $telp }}</p>
-            </div>
-        </div>
-
-        <!-- Baris 2 -->
-        <div class="row justify-content-center">
-            <div class="col-md-2 col-sm-4 text-center mb-4">
-                <img src="img/{{ $image2 }}" alt="Foto 2" class="parhalado-gambar img-fluid mb-1">
-                <h6 class="parhalado-judul">{{ $name2 }}</h6>
-                <p class="parhalado-isi">{{ $jabatan2 }}</p>
-                <p class="parhalado-isi">{{ $telp2 }}</p>
-            </div>
-
-            <div class="col-md-2 col-sm-4 text-center mb-4">
-                <img src="img/{{ $image3 }}" alt="Foto 3" class="parhalado-gambar img-fluid mb-1">
-                <h6 class="parhalado-judul">{{ $name3 }}</h6>
-                <p class="parhalado-isi">{{ $jabatan3 }}</p>
-                <p class="parhalado-isi">{{ $telp3 }}</p>
-            </div>
-
-            <div class="col-md-2 col-sm-4 text-center mb-4">
-                <img src="img/{{ $image4 }}" alt="Foto 4" class="parhalado-gambar img-fluid mb-1">
-                <h6 class="parhalado-judul">{{ $name4 }}</h6>
-                <p class="parhalado-isi">{{ $jabatan4 }}</p>
-                <p class="parhalado-isi">{{ $telp4 }}</p>
-            </div>
-
-            <div class="col-md-2 col-sm-4 text-center mb-4">
-                <img src="img/{{ $image5 }}" alt="Foto 5" class="parhalado-gambar img-fluid mb-1">
-                <h6 class="parhalado-judul">{{ $name5 }}</h6>
-                <p class="parhalado-isi">{{ $jabatan5 }}</p>
-                <p class="parhalado-isi">{{ $telp5 }}</p>
-            </div>
-
-            <div class="col-md-2 col-sm-4 text-center mb-4">
-                <img src="img/{{ $image6 }}" alt="Foto 6" class="parhalado-gambar img-fluid mb-1">
-                <h6 class="parhalado-judul">{{ $name6 }}</h6>
-                <p class="parhalado-isi">{{ $jabatan6 }}</p>
-                <p class="parhalado-isi">{{ $telp6 }}</p>
-            </div>
-        </div>
-
-        <!-- Baris 3 -->
-        <div class="row justify-content-center">
-            <div class="col-md-4 col-sm-6 text-center mb-4">
-                <img src="img/{{ $image7 }}" alt="Foto 7" class="parhalado-gambar img-fluid mb-1">
-                <h6 class="parhalado-judul">{{ $name7 }}</h6>
-                <p class="parhalado-isi">{{ $jabatan7 }}</p>
-                <p class="parhalado-isi">{{ $telp7 }}</p>
-            </div>
-
-            <div class="col-md-4 col-sm-6 text-center mb-4">
-                <img src="img/{{ $image8 }}" alt="Foto 8" class="parhalado-gambar img-fluid mb-1">
-                <h6 class="parhalado-judul">{{ $name8 }}</h6>
-                <p class="parhalado-isi">{{ $jabatan8 }}</p>
-                <p class="parhalado-isi">{{ $telp8 }}</p>
-            </div>
-
-            <div class="col-md-4 col-sm-6 text-center mb-4">
-                <img src="img/{{ $image8 }}" alt="Foto 9" class="parhalado-gambar img-fluid mb-1">
-                <h6 class="parhalado-judul">{{ $name8 }}</h6>
-                <p class="parhalado-isi">{{ $jabatan8 }}</p>
-                <p class="parhalado-isi">{{ $telp8 }}</p>
-            </div>
-        </div>
-
-        <!-- Baris 4 -->
-        <div class="row justify-content-center">
-            <div class="col-md-3 col-sm-6 text-center mb-4">
-                <img src="img/{{ $image8 }}" alt="Foto 10" class="parhalado-gambar img-fluid mb-1">
-                <h6 class="parhalado-judul">{{ $name8 }}</h6>
-                <p class="parhalado-isi">{{ $jabatan8 }}</p>
-                <p class="parhalado-isi">{{ $telp8 }}</p>
-            </div>
-
-            <div class="col-md-3 col-sm-6 text-center mb-4">
-                <img src="img/{{ $image8 }}" alt="Foto 11" class="parhalado-gambar img-fluid mb-1">
-                <h6 class="parhalado-judul">{{ $name8 }}</h6>
-                <p class="parhalado-isi">{{ $jabatan8 }}</p>
-                <p class="parhalado-isi">{{ $telp8 }}</p>
-            </div>
-
-            <div class="col-md-3 col-sm-6 text-center mb-4">
-                <img src="img/{{ $image8 }}" alt="Foto 12" class="parhalado-gambar img-fluid mb-1">
-                <h6 class="parhalado-judul">{{ $name8 }}</h6>
-                <p class="parhalado-isi">{{ $jabatan8 }}</p>
-                <p class="parhalado-isi">{{ $telp8 }}</p>
-            </div>
-
-            <div class="col-md-3 col-sm-6 text-center mb-4">
-                <img src="img/{{ $image8 }}" alt="Foto 13" class="parhalado-gambar img-fluid mb-1">
-                <h6 class="parhalado-judul">{{ $name8 }}</h6>
-                <p class="parhalado-isi">{{ $jabatan8 }}</p>
-                <p class="parhalado-isi">{{ $telp8 }}</p>
-            </div>
-        </div>
-
-        <!-- Baris 5 -->
-        <div class="row justify-content-center">
-            <div class="col-md-3 col-sm-6 text-center mb-4">
-                <img src="img/{{ $image8 }}" alt="Foto 14" class="parhalado-gambar img-fluid mb-1">
-                <h6 class="parhalado-judul">{{ $name8 }}</h6>
-                <p class="parhalado-isi">{{ $jabatan8 }}</p>
-                <p class="parhalado-isi">{{ $telp8 }}</p>
-            </div>
-
-            <div class="col-md-3 col-sm-6 text-center mb-4">
-                <img src="img/{{ $image8 }}" alt="Foto 15" class="parhalado-gambar img-fluid mb-1">
-                <h6 class="parhalado-judul">{{ $name8 }}</h6>
-                <p class="parhalado-isi">{{ $jabatan8 }}</p>
-                <p class="parhalado-isi">{{ $telp8 }}</p>
-            </div>
-
-            <div class="col-md-3 col-sm-6 text-center mb-4">
-                <img src="img/{{ $image8 }}" alt="Foto 16" class="parhalado-gambar img-fluid mb-1">
-                <h6 class="parhalado-judul">{{ $name8 }}</h6>
-                <p class="parhalado-isi">{{ $jabatan8 }}</p>
-                <p class="parhalado-isi">{{ $telp8 }}</p>
-            </div>
-
-            <div class="col-md-3 col-sm-6 text-center mb-4">
-                <img src="img/{{ $image8 }}" alt="Foto 17" class="parhalado-gambar img-fluid mb-1">
-                <h6 class="parhalado-judul">{{ $name8 }}</h6>
-                <p class="parhalado-isi">{{ $jabatan8 }}</p>
-                <p class="parhalado-isi">{{ $telp8 }}</p>
-            </div>
-        </div>
-
-        <!-- Baris 6 -->
-        <div class="row justify-content-center">
-            <div class="col-md-4 col-sm-6 text-center mb-4">
-                <img src="img/{{ $image8 }}" alt="Foto 18" class="parhalado-gambar img-fluid mb-1">
-                <h6 class="parhalado-judul">{{ $name8 }}</h6>
-                <p class="parhalado-isi">{{ $jabatan8 }}</p>
-                <p class="parhalado-isi">{{ $telp8 }}</p>
-            </div>
-
-            <div class="col-md-4 col-sm-6 text-center mb-4">
-                <img src="img/{{ $image8 }}" alt="Foto 19" class="parhalado-gambar img-fluid mb-1">
-                <h6 class="parhalado-judul">{{ $name8 }}</h6>
-                <p class="parhalado-isi">{{ $jabatan8 }}</p>
-                <p class="parhalado-isi">{{ $telp8 }}</p>
-            </div>
-
-            <div class="col-md-4 col-sm-6 text-center mb-4">
-                <img src="img/{{ $image8 }}" alt="Foto 20" class="parhalado-gambar img-fluid mb-1">
-                <h6 class="parhalado-judul">{{ $name8 }}</h6>
-                <p class="parhalado-isi">{{ $jabatan8 }}</p>
-                <p class="parhalado-isi">{{ $telp8 }}</p>
-            </div>
-        </div>
-    </section>
-</div>
-</section>
-@endsection
-
-<style>
-            .parhalado {
-            font-family: 'Nunito', sans-serif;
-            padding-top: 8%;
-            padding-bottom: 4%;
-        }
-
-        .parhalado-judul {
-            font-weight: bold;
-        }
-
-        .parhalado-isi {
-            font-size: 14px;
-        }
-
-        .parhalado-gambar {
-            width: 150px;
-            height: 210px;
-        }
-</style> --}}

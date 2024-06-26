@@ -1,11 +1,9 @@
 @extends('layouts.main')
-
 @section ('container')
 <section class="layanan-section">
     <p class="layanan-title text-center">Pendaftaran Jemaat Baru <br> HKBP Sultan Mazmur Pancawati</p>
     <div class="row justify-content-center">
     <div class="col-lg-10 layanan-card">
-        
         @if(session()->has('success'))
         <div class="alert alert-success alert-dismissible fade show" role="alert">
             {{ session('success') }}
@@ -86,18 +84,17 @@
             @enderror
             </div>
         </div>
-    <button class="btn btn-primary w-100 mt-4 py-2" type="submit">Kirim</button>
+    <button class="btn btn-kirim w-100 mt-4 py-2" type="submit">Kirim</button>
     </form>
     </main>
     </div>
     </div>
 </section>
-
 @endsection  
 
 <style>
     .layanan-title{
-        padding-top: 10%;
+        padding-top: 8%;
         color: var(--primary-600, #00397D);
         font-family: 'Nunito';
         font-size: 20px;
@@ -107,13 +104,47 @@
     }
 
     .layanan-section{
-        /* padding-top: 10% !important; */
         font-family: 'Nunito' !important;
         font-style: normal;
         line-height: 120%;
+        padding-bottom: 2%;
+    }
+
+    .btn-kirim {
+        color: #FFFFFF !important;
+        font-family: 'Nunito' !important;
+        font-size: 18px !important;
+        font-weight: 500 !important;
+        background-color: #00397D !important;
+    }
+
+    .btn-kirim:hover {
+        background-color: #005EC6 !important;
     }
 
     .form-layanan input {
     border-radius: 4px;
   }
+
+  @media (max-width: 575.98px) {  
+        .layanan-title {
+            font-size: 16px;
+            padding-top: 18% !important;
+        }
+
+        .form-layanan input {
+            font-size: 14px;
+        }
+
+        .btn-kirim {
+            font-size: 16px !important;
+        }
+    }
+
+    @media (min-width: 768px) and (max-width: 991.98px) {
+        .layanan-title {
+            font-size: 18px;
+            padding-top: 12% !important;
+        }
+    }
 </style>

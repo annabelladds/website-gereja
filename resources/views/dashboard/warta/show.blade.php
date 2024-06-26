@@ -1,29 +1,20 @@
 @extends('dashboard.layouts.main')
-
 @section('container')
-
-{{-- <p class="warta-detail col-md-8">{{ $warta->title }}</p> --}}
 <p class="warta-detail col-md-8">Detail Warta Jemaat</p>
 <section class="detail-section mb-5">
     <div class="warta-detail-hero">
         <div class="row">
             <div class="col-md-8">
-                {{-- <img src="https://source.unsplash.com/1200x700/?church" class="img-fluid mb-4 rounded" alt="Gereja"> --}}
                 @if($warta->count())
-                {{-- @foreach ($warta->take(5) as $wartadetail) --}}
                 <ul class="list-group list-group-flush mt-3 warta-jemaat-isi">
                   <li class="list-group-item-action d-flex justify-content-between align-items-center mb-4 tanggal-warta">
                     {{ $warta->title }}
-                      {{-- <a class="btn btn-primary btn-warta-jemaat" href="/warta/{{ $warta->slug }}">Download</a> --}}
                       <a class="btn btn-primary btn-warta-jemaat" href="{{ asset('storage/' . $warta->file) }}">Download</a>
                   </li>
                 </ul>
-                  {{-- @endforeach --}}
                     @else
                         <p class="text-center fs-4">Tidak Ada Warta yang Ditemukan!</p>
                     @endif
-                
-                {{-- <img src="/img/Dalam Gereja.png" class="img-fluid mb-4 rounded" alt="Gereja"> --}}
                 <a href="/dashboard/warta" class="dashboard-kembali"><span data-feather="arrow-left"></span></a>
                 <a href="/dashboard/warta/{{ $warta->slug }}/edit" class="dashboard-edit"><span data-feather="edit"></span></a>
                 <form action="/dashboard/warta/{{ $warta->slug }}" method="post" class="d-inline">
@@ -34,27 +25,21 @@
             </div>
         </div>
     </div>
-
 @endsection
 
 <style>
-
     .btn {
         padding-left: 0% !important;
         margin-bottom: 2%;
     }
 
       .dashboard-kembali {
-    /* color: var(--font-600, #00397D) !important; */
     color: var(--font-600, #004BA4) !important;
     width: auto;
     margin-right: 4px;
-    /* color: var(--font-600, #FFFFFF) !important;
-    background-color: var(--font-600, #00397D) !important; */ */
   }
 
   .dashboard-kembali:hover {
-    /* color: var(--font-600, #005EC6) !important; */
     color: var(--font-600, #579AFF) !important;
     width: auto;
     margin-right: 4px;
@@ -91,17 +76,12 @@
     }
 
     .warta-detail-hero {
-        /* margin-left: 8% !important;
-        margin-right: 8% !important; */
         text-align: justify;
     }
 
     .warta-detail {
         padding-top: 3%;
         padding-left: 7%;
-        /* padding-left: 4%; */
-        /* padding-right: 8%; */
-        /* margin-left: 3% !important; */
         color: var(--primary-600, #00397D) !important;
         font-family: 'Nunito';
         font-size: 24px;
@@ -112,9 +92,7 @@
     }
     
     .tanggal-warta {
-    /* pointer-events: none !important; */
     background-color: inherit !important;
-    /* color: inherit !important; */
     color: var(--primary-600, #00397D) !important;
     font-family: 'Nunito';
         font-size: 24px;
@@ -146,7 +124,7 @@
     background-color: var(--font-600, #005EC6) !important;
   }
 
-  @media (max-width: 576px) { /* Phones */
+  @media (max-width: 576px) {
     .action-icons, .warta-jemaat-isi {
         display: flex;
         flex-direction: column;
@@ -157,7 +135,7 @@
     }
 }
 
-@media (min-width: 577px) and (max-width: 768px) { /* Tablets */
+@media (min-width: 577px) and (max-width: 768px) {
     .action-icons, .warta-jemaat-isi {
         display: flex;
         flex-direction: column;
@@ -168,14 +146,14 @@
     }
 }
 
-@media (min-width: 769px) and (max-width: 992px) { /* Small laptops */
+@media (min-width: 769px) and (max-width: 992px) {
     .action-icons, .warta-jemaat-isi {
         display: flex;
         flex-direction: row;
     }
 }
 
-@media (min-width: 993px) { /* Larger devices */
+@media (min-width: 993px) {
     .action-icons, .warta-jemaat-isi {
         display: flex;
         flex-direction: row;
@@ -209,7 +187,6 @@
     font-weight: 700;
     line-height: 120%;
     text-align: start;
-    /* pointer-events: none; Prevent pointer events for the title */
 }
 
 .btn-warta-jemaat {

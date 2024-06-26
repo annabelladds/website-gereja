@@ -8,110 +8,9 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <link rel="icon" href="img/church (2).png" type="image/png">
     <title>Login - HKBP Sultan Mazmur Pancawati</title>
-    <style>
-        body {
-            background-image: url('/img/Berdoa.png');
-            background-size: cover;
-            background-position: center;
-            height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            font-family: 'Nunito', sans-serif;
-        }
-
-        .card {
-            background: #FFFFFF;
-            padding: 30px;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-            width: 100%;
-            max-width: 360px;
-        }
-
-        .title-login {
-            color: #00397D;
-            font-size: 19px;
-            font-weight: 700;
-            text-align: center;
-            margin-bottom: 1rem;
-        }
-
-        .isi-login {
-            color: #868686;
-            font-size: 14px;
-            text-align: center;
-            margin-bottom: 1.5rem;
-        }
-
-        .title-isi {
-            font-size: 14px;
-            color: #000;
-            margin-bottom: 0.5rem;
-        }
-
-        .form-floating {
-            margin-bottom: 1rem;
-        }
-
-        .form-floating label {
-            color: #9B9B9B;
-            font-size: 13px;
-        }
-
-        .form-floating input {
-            height: 45px;
-            padding-left: 0.75rem;
-        }
-
-        .btn-masuk {
-            width: 100%;
-            background-color: var(--font-600, #00397D);
-            color: #FFFFFF;
-            font-size: 14px;
-            font-weight: 300;
-            border-radius: 4px;
-            padding: 0.5rem;
-            margin-top: 1.5rem;
-        }
-
-        .btn-masuk:hover {
-            width: 100%;
-            background-color: var(--font-600, #005EC6);
-            color: #FFFFFF;
-            font-size: 14px;
-            font-weight: 300;
-            border-radius: 4px;
-            padding: 0.5rem;
-            margin-top: 1.5rem;
-        }
-
-        @media (max-width: 575.98px) {
-            body {
-                padding: 1rem;
-            }
-
-            .card {
-                padding: 20px;
-            }
-        }
-    </style>
 </head>
 <body class="login-body">
     <div class="card login-card">
-        {{-- @if(session()->has('success'))
-        <div class="alert alert-success alert-dismissible fade show" role="alert">
-            {{ session('success') }}
-            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-        </div>
-        @endif --}}
-
-        {{-- @if(session()->has('success'))
-        <script>
-            window.location.href = '{{ url("/dashboard") }}';
-        </script>
-        @endif --}}
-
         @if(session()->has('loginError'))
         <div class="alert alert-danger alert-dismissible fade show" role="alert">
             {{ session('loginError') }}
@@ -144,3 +43,91 @@
     </div>
 </body>
 </html>
+<style>
+    body {
+        background-image: url('/img/church login.jpg');
+        background-size: cover;
+        background-position: center;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Nunito', sans-serif;
+    }
+
+    .card {
+        background: #FFFFFF;
+        padding: 30px;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        width: 100%;
+        max-width: 360px;
+    }
+
+    .title-login {
+        color: #00397D;
+        font-size: 19px;
+        font-weight: 700;
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+
+    .isi-login {
+        color: #868686;
+        font-size: 14px;
+        text-align: center;
+        margin-bottom: 1.5rem;
+    }
+
+    .title-isi {
+        font-size: 14px;
+        color: #000;
+        margin-bottom: 0.5rem;
+    }
+
+    .form-floating {
+        margin-bottom: 1rem;
+    }
+
+    .form-floating label {
+        color: #9B9B9B;
+        font-size: 13px;
+    }
+
+    .form-floating input {
+        height: 45px;
+        padding-left: 0.75rem;
+    }
+
+    .btn-masuk {
+        width: 100%;
+        background-color: var(--font-600, #00397D);
+        color: #FFFFFF;
+        font-size: 14px;
+        font-weight: 300;
+        border-radius: 4px;
+        padding: 0.5rem;
+        margin-top: 1.5rem;
+    }
+
+    .btn-masuk:hover {
+        width: 100%;
+        background-color: var(--font-600, #005EC6);
+        color: #FFFFFF;
+        font-size: 14px;
+        font-weight: 300;
+        border-radius: 4px;
+        padding: 0.5rem;
+        margin-top: 1.5rem;
+    }
+
+    @media (max-width: 575.98px) {
+        body {
+            padding: 1rem;
+        }
+
+        .card {
+            padding: 20px;
+        }
+    }
+</style>

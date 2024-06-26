@@ -1,102 +1,49 @@
 @extends('layouts.main')
-
 @section('container')
-<section class="ama-section py-2">
+<section class="ama-section">
     <div class="ama">
-        <div class="row py-4">
-          <!-- Baris Pertama -->
-          <div class="col text-center">
-            <img src="img/{{ $image }}" alt="Foto 1" class="ama-gambar img-fluid mb-1">
-            <h6 class="ama-judul">{{ $name }}</h6>
-            <p class="ama-isi">{{ $jabatan }}</p>
-            <p class="ama-isi">{{ $telp }}</p>
-            <p class="ama-isi">{{ $sektor }}</p>
-          </div>
-        </div>
-        <div class="row pertama-ama py-4">
-          <!-- Baris Kedua -->
-          <div class="col">
-            <img src="img/{{ $image2 }}" alt="Foto 2" class="ama-gambar img-fluid mb-1">
-            <h6 class="ama-judul">{{ $name2 }}</h6>
-            <p class="ama-isi">{{ $jabatan2 }}</p>
-            <p class="ama-isi">{{ $telp2 }}</p>
-            <p class="ama-isi">{{ $sektor2 }}</p>
-          </div>
-          <div class="col">
-            <img src="img/{{ $image3 }}" alt="Foto 3" class="ama-gambar img-fluid mb-1">
-            <h6 class="ama-judul">{{ $name3 }}</h6>
-            <p class="ama-isi">{{ $jabatan3 }}</p>
-            <p class="ama-isi">{{ $telp3 }}</p>
-            <p class="ama-isi">{{ $sektor3 }}</p>
-          </div>
-          <div class="col">
-            <img src="img/{{ $image4 }}" alt="Foto 4" class="ama-gambar img-fluid mb-1">
-            <h6 class="ama-judul">{{ $name4 }}</h6>
-            <p class="ama-isi">{{ $jabatan4 }}</p>
-            <p class="ama-isi">{{ $telp4 }}</p>
-            <p class="ama-isi">{{ $sektor4 }}</p>
-          </div>
-        </div>
-        <div class="row">
-          {{-- <!-- Baris Ketiga -->
-          <div class="col">
-            <img src="img/{{ $image5 }}" alt="Foto 5" class="ama-gambar img-fluid mb-1">
-            <h6 class="ama-judul">{{ $name5 }}</h6>
-            <p class="ama-isi">{{ $jabatan5 }}</p>
-            <p class="ama-isi">{{ $telp5 }}</p>
-            <p class="ama-isi">{{ $sektor5 }}</p>
-          </div>
-          <div class="col">
-            <img src="img/{{ $image6 }}" alt="Foto 6" class="ama-gambar img-fluid mb-1">
-            <h6 class="ama-judul">{{ $name6 }}</h6>
-            <p class="ama-isi">{{ $jabatan6 }}</p>
-            <p class="ama-isi">{{ $telp6 }}</p>
-            <p class="ama-isi">{{ $sektor6 }}</p>
-          </div>
-          <div class="col">
-            <img src="img/{{ $image7 }}" alt="Foto 7" class="ama-gambar img-fluid mb-1">
-            <h6 class="ama-judul">{{ $name7 }}</h6>
-            <p class="ama-isi">{{ $jabatan7 }}</p>
-            <p class="ama-isi">{{ $telp7 }}</p>
-            <p class="ama-isi">{{ $sektor7 }}</p>
-          </div>
-          <div class="row">
-            <!-- Baris Keempat -->
-            <div class="col">
-              <img src="img/{{ $image8 }}" alt="Foto 8" class="ama-gambar img-fluid mb-1">
-              <h6 class="ama-judul">{{ $name8 }}</h6>
-              <p class="ama-isi">{{ $jabatan8 }}</p>
-              <p class="ama-isi">{{ $telp8 }}</p>
-              <p class="ama-isi">{{ $sektor8 }}</p>
+        <div class="row py-4 justify-content-center">
+            <!-- Foto-foto Ama -->
+            <div class="col-12 col-sm-6 col-md-4 col-lg-2 text-center mb-3">
+                <div class="image-container">
+                    <img src="img/St. Sinambela.jpeg" alt="St. E. Sinambela" class="ama-gambar img-fluid mb-1">
+                </div>
+                <h6 class="ama-judul">St. E. Sinambela</h6>
+                <p class="ama-isi">Paniroi Ama</p>
+                <p class="ama-isi">081382956637</p>
             </div>
-            <div class="col">
-              <img src="img/{{ $image9 }}" alt="Foto 9" class="ama-gambar img-fluid mb-1">
-              <h6 class="ama-judul">{{ $name9 }}</h6>
-              <p class="ama-isi">{{ $jabatan9 }}</p>
-              <p class="ama-isi">{{ $telp9 }}</p>
-              <p class="ama-isi">{{ $sektor9 }}</p>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-2 text-center mb-3">
+                <div class="image-container">
+                    <img src="img/N. Pakpahan.jpg" alt="N. Pakpahan/br. Sinaga" class="ama-gambar img-fluid mb-1">
+                </div>
+                <h6 class="ama-judul">N. Pakpahan/br. Sinaga</h6>
+                <p class="ama-isi">Ketua Ama</p>
+                <p class="ama-isi">089686028573</p>
             </div>
-            <div class="col">
-              <img src="img/{{ $image10 }}" alt="Foto 10" class="ama-gambar img-fluid mb-1">
-              <h6 class="ama-judul">{{ $name10 }}</h6>
-              <p class="ama-isi">{{ $jabatan10 }}</p>
-              <p class="ama-isi">{{ $telp10 }}</p>
-              <p class="ama-isi">{{ $sektor10 }}</p>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-2 text-center mb-3">
+                <div class="image-container">
+                    <img src="img/F. Naibaho.jpg" alt="F. Naibaho/br. Pasaribu" class="ama-gambar img-fluid mb-1">
+                </div>
+                <h6 class="ama-judul">F. Naibaho/br. Pasaribu</h6>
+                <p class="ama-isi">Sekretaris Ama</p>
+                <p class="ama-isi">082113695536</p>
             </div>
-            <div class="col">
-              <img src="img/{{ $image11 }}" alt="Foto 11" class="ama-gambar img-fluid mb-1">
-              <h6 class="ama-judul">{{ $name11 }}</h6>
-              <p class="ama-isi">{{ $jabatan11 }}</p>
-              <p class="ama-isi">{{ $telp11 }}</p>
-              <p class="ama-isi">{{ $sektor11 }}</p>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-2 text-center mb-3">
+                <div class="image-container">
+                    <img src="img/H. Silaban.jpeg" alt="H. Silaban/br. Limbong" class="ama-gambar img-fluid mb-1">
+                </div>
+                <h6 class="ama-judul">H. Silaban/br. Limbong</h6>
+                <p class="ama-isi">Bendahara Ama</p>
+                <p class="ama-isi">085281404341</p>
             </div>
-            <div class="col">
-              <img src="img/{{ $image12 }}" alt="Foto 12" class="ama-gambar img-fluid mb-1">
-              <h6 class="ama-judul">{{ $name12 }}</h6>
-              <p class="ama-isi">{{ $jabatan12 }}</p>
-              <p class="ama-isi">{{ $telp12 }}</p>
-              <p class="ama-isi">{{ $sektor12 }}</p>
-            </div> --}}
+            <div class="col-12 col-sm-6 col-md-4 col-lg-2 text-center mb-3">
+                <div class="image-container">
+                    <img src="img/D. Nainggolan.jpeg" alt="D. Nainggolan/br. Sipahutar" class="ama-gambar img-fluid mb-1">
+                </div>
+                <h6 class="ama-judul">D. Nainggolan/br. Sipahutar</h6>
+                <p class="ama-isi">Seksi Koor Ama</p>
+                <p class="ama-isi">081310926017</p>
+            </div>
         </div>
     </div>
 </section>
@@ -108,31 +55,73 @@
         width: 100% !important;
         text-align: center;
         padding-top: 8%;
-        padding-bottom: 4%;
-        /* justify-content: center !important;
-        align-content: center !important; */
+        padding-bottom: 2%;
     }
 
     .ama-judul {
         margin-bottom: 1px !important;
-        /* margin-top: 1px !important; */
         font-weight: bold !important;
-        text-align: center;
     }
 
-    .ama-isi{
+    .ama-isi {
         margin-bottom: 1px !important;
         font-size: 14px;
-        text-align: center;
     }
 
     .ama-gambar {
         width: 150px !important;
         height: 210px !important;
+        object-fit: cover;
     }
 
-    .pertama-ama {
-      padding-right: 29% !important;
-      padding-left: 29% !important;
+    .image-container {
+        overflow: hidden;
+        max-width: 100%;
+        max-height: 210px;
+    }
+
+    @media (max-width: 576px) {
+        .col-12 {
+            flex: 0 0 100%;
+            max-width: 100%;
+        }
+
+        .ama {
+            padding-top: 18% !important;
+        }
+    }
+
+    @media (min-width: 577px) and (max-width: 768px) {
+        .col-12.col-sm-6 {
+            flex: 0 0 50%;
+            max-width: 50%;
+        }
+
+        .ama {
+            padding-top: 16% !important;
+        }
+    }
+
+    @media (min-width: 769px) and (max-width: 992px) {
+        .col-12.col-sm-6.col-md-4 {
+            flex: 0 0 33.3333%;
+            max-width: 33.3333%;
+        }
+
+        .ama {
+            padding-top: 14% !important;
+        }
+    }
+
+    @media (min-width: 993px) {
+        .col-12.col-sm-6.col-md-4.col-lg-2 {
+            flex: 0 0 20%;
+            max-width: 20%;
+        }
+    }
+
+    .row {
+        margin-right: 0 !important;
+        margin-left: 0 !important;
     }
 </style>

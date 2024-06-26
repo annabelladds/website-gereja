@@ -1,270 +1,74 @@
 @extends('layouts.main')
-
 @section('container')
 <section class="musik-section">
     <div class="musik">
-        <div class="row pertama-musik py-4">
-          <!-- Baris Pertama -->
-          <div class="col text-center">
-            <img src="img/{{ $image }}" alt="Foto 1" class="musik-gambar img-fluid mb-1">
-            <h6 class="musik-judul">{{ $name }}</h6>
-            <p class="musik-isi">{{ $jabatan }}</p>
-            <p class="musik-isi">{{ $telp }}</p>
-            <p class="musik-isi">{{ $sektor }}</p>
-          </div>
-        </div>
-        <div class="row pertama-musik py-4">
-          <!-- Baris Kedua -->
-          <div class="col">
-            <img src="img/{{ $image2 }}" alt="Foto 2" class="musik-gambar img-fluid mb-1">
-            <h6 class="musik-judul">{{ $name2 }}</h6>
-            <p class="musik-isi">{{ $jabatan2 }}</p>
-            <p class="musik-isi">{{ $telp2 }}</p>
-            <p class="musik-isi">{{ $sektor2 }}</p>
-          </div>
-        </div>
-        <div class="row kedua-musik py-4">
-          <!-- Baris Kedua -->
-          <div class="col">
-            <img src="img/{{ $image2 }}" alt="Foto 2" class="musik-gambar img-fluid mb-1">
-            <h6 class="musik-judul">{{ $name2 }}</h6>
-            <p class="musik-isi">{{ $jabatan2 }}</p>
-            <p class="musik-isi">{{ $telp2 }}</p>
-            <p class="musik-isi">{{ $sektor2 }}</p>
-          </div>
-          <div class="col">
-            <img src="img/{{ $image3 }}" alt="Foto 3" class="musik-gambar img-fluid mb-1">
-            <h6 class="musik-judul">{{ $name3 }}</h6>
-            <p class="musik-isi">{{ $jabatan3 }}</p>
-            <p class="musik-isi">{{ $telp3 }}</p>
-            <p class="musik-isi">{{ $sektor3 }}</p>
-          </div>
-          <div class="col">
-            <img src="img/{{ $image4 }}" alt="Foto 4" class="musik-gambar img-fluid mb-1">
-            <h6 class="musik-judul">{{ $name4 }}</h6>
-            <p class="musik-isi">{{ $jabatan4 }}</p>
-            <p class="musik-isi">{{ $telp4 }}</p>
-            <p class="musik-isi">{{ $sektor4 }}</p>
-          </div>
-          <div class="col">
-            <img src="img/{{ $image4 }}" alt="Foto 4" class="musik-gambar img-fluid mb-1">
-            <h6 class="musik-judul">{{ $name4 }}</h6>
-            <p class="musik-isi">{{ $jabatan4 }}</p>
-            <p class="musik-isi">{{ $telp4 }}</p>
-            <p class="musik-isi">{{ $sektor4 }}</p>
-          </div>
-          <div class="col">
-            <img src="img/{{ $image4 }}" alt="Foto 4" class="musik-gambar img-fluid mb-1">
-            <h6 class="musik-judul">{{ $name4 }}</h6>
-            <p class="musik-isi">{{ $jabatan4 }}</p>
-            <p class="musik-isi">{{ $telp4 }}</p>
-            <p class="musik-isi">{{ $sektor4 }}</p>
-          </div>
-          <div class="col">
-            <img src="img/{{ $image4 }}" alt="Foto 4" class="musik-gambar img-fluid mb-1">
-            <h6 class="musik-judul">{{ $name4 }}</h6>
-            <p class="musik-isi">{{ $jabatan4 }}</p>
-            <p class="musik-isi">{{ $telp4 }}</p>
-            <p class="musik-isi">{{ $sektor4 }}</p>
-          </div>
-        </div>
-        <div class="row kedua-musik py-4">
-          <!-- Baris Kedua -->
-          <div class="col">
-            <img src="img/{{ $image2 }}" alt="Foto 2" class="musik-gambar img-fluid mb-1">
-            <h6 class="musik-judul">{{ $name2 }}</h6>
-            <p class="musik-isi">{{ $jabatan2 }}</p>
-            <p class="musik-isi">{{ $telp2 }}</p>
-            <p class="musik-isi">{{ $sektor2 }}</p>
-          </div>
-          <div class="col">
-            <img src="img/{{ $image3 }}" alt="Foto 3" class="musik-gambar img-fluid mb-1">
-            <h6 class="musik-judul">{{ $name3 }}</h6>
-            <p class="musik-isi">{{ $jabatan3 }}</p>
-            <p class="musik-isi">{{ $telp3 }}</p>
-            <p class="musik-isi">{{ $sektor3 }}</p>
-          </div>
-          <div class="col">
-            <img src="img/{{ $image4 }}" alt="Foto 4" class="musik-gambar img-fluid mb-1">
-            <h6 class="musik-judul">{{ $name4 }}</h6>
-            <p class="musik-isi">{{ $jabatan4 }}</p>
-            <p class="musik-isi">{{ $telp4 }}</p>
-            <p class="musik-isi">{{ $sektor4 }}</p>
-          </div>
-          <div class="col">
-            <img src="img/{{ $image4 }}" alt="Foto 4" class="musik-gambar img-fluid mb-1">
-            <h6 class="musik-judul">{{ $name4 }}</h6>
-            <p class="musik-isi">{{ $jabatan4 }}</p>
-            <p class="musik-isi">{{ $telp4 }}</p>
-            <p class="musik-isi">{{ $sektor4 }}</p>
-          </div>
-          <div class="col">
-            <img src="img/{{ $image4 }}" alt="Foto 4" class="musik-gambar img-fluid mb-1">
-            <h6 class="musik-judul">{{ $name4 }}</h6>
-            <p class="musik-isi">{{ $jabatan4 }}</p>
-            <p class="musik-isi">{{ $telp4 }}</p>
-            <p class="musik-isi">{{ $sektor4 }}</p>
-          </div>
-          <div class="col">
-            <img src="img/{{ $image4 }}" alt="Foto 4" class="musik-gambar img-fluid mb-1">
-            <h6 class="musik-judul">{{ $name4 }}</h6>
-            <p class="musik-isi">{{ $jabatan4 }}</p>
-            <p class="musik-isi">{{ $telp4 }}</p>
-            <p class="musik-isi">{{ $sektor4 }}</p>
-          </div>
-        </div>
-        <div class="row kedua-musik py-4">
-          <!-- Baris Kedua -->
-          <div class="col">
-            <img src="img/{{ $image2 }}" alt="Foto 2" class="musik-gambar img-fluid mb-1">
-            <h6 class="musik-judul">{{ $name2 }}</h6>
-            <p class="musik-isi">{{ $jabatan2 }}</p>
-            <p class="musik-isi">{{ $telp2 }}</p>
-            <p class="musik-isi">{{ $sektor2 }}</p>
-          </div>
-          <div class="col">
-            <img src="img/{{ $image3 }}" alt="Foto 3" class="musik-gambar img-fluid mb-1">
-            <h6 class="musik-judul">{{ $name3 }}</h6>
-            <p class="musik-isi">{{ $jabatan3 }}</p>
-            <p class="musik-isi">{{ $telp3 }}</p>
-            <p class="musik-isi">{{ $sektor3 }}</p>
-          </div>
-          <div class="col">
-            <img src="img/{{ $image4 }}" alt="Foto 4" class="musik-gambar img-fluid mb-1">
-            <h6 class="musik-judul">{{ $name4 }}</h6>
-            <p class="musik-isi">{{ $jabatan4 }}</p>
-            <p class="musik-isi">{{ $telp4 }}</p>
-            <p class="musik-isi">{{ $sektor4 }}</p>
-          </div>
-          <div class="col">
-            <img src="img/{{ $image4 }}" alt="Foto 4" class="musik-gambar img-fluid mb-1">
-            <h6 class="musik-judul">{{ $name4 }}</h6>
-            <p class="musik-isi">{{ $jabatan4 }}</p>
-            <p class="musik-isi">{{ $telp4 }}</p>
-            <p class="musik-isi">{{ $sektor4 }}</p>
-          </div>
-          <div class="col">
-            <img src="img/{{ $image4 }}" alt="Foto 4" class="musik-gambar img-fluid mb-1">
-            <h6 class="musik-judul">{{ $name4 }}</h6>
-            <p class="musik-isi">{{ $jabatan4 }}</p>
-            <p class="musik-isi">{{ $telp4 }}</p>
-            <p class="musik-isi">{{ $sektor4 }}</p>
-          </div>
-          <div class="col">
-            <img src="img/{{ $image4 }}" alt="Foto 4" class="musik-gambar img-fluid mb-1">
-            <h6 class="musik-judul">{{ $name4 }}</h6>
-            <p class="musik-isi">{{ $jabatan4 }}</p>
-            <p class="musik-isi">{{ $telp4 }}</p>
-            <p class="musik-isi">{{ $sektor4 }}</p>
-          </div>
-        </div>
-        <div class="row kedua-musik py-4">
-          <!-- Baris Kedua -->
-          <div class="col">
-            <img src="img/{{ $image2 }}" alt="Foto 2" class="musik-gambar img-fluid mb-1">
-            <h6 class="musik-judul">{{ $name2 }}</h6>
-            <p class="musik-isi">{{ $jabatan2 }}</p>
-            <p class="musik-isi">{{ $telp2 }}</p>
-            <p class="musik-isi">{{ $sektor2 }}</p>
-          </div>
-          <div class="col">
-            <img src="img/{{ $image3 }}" alt="Foto 3" class="musik-gambar img-fluid mb-1">
-            <h6 class="musik-judul">{{ $name3 }}</h6>
-            <p class="musik-isi">{{ $jabatan3 }}</p>
-            <p class="musik-isi">{{ $telp3 }}</p>
-            <p class="musik-isi">{{ $sektor3 }}</p>
-          </div>
-          <div class="col">
-            <img src="img/{{ $image4 }}" alt="Foto 4" class="musik-gambar img-fluid mb-1">
-            <h6 class="musik-judul">{{ $name4 }}</h6>
-            <p class="musik-isi">{{ $jabatan4 }}</p>
-            <p class="musik-isi">{{ $telp4 }}</p>
-            <p class="musik-isi">{{ $sektor4 }}</p>
-          </div>
-          <div class="col">
-            <img src="img/{{ $image4 }}" alt="Foto 4" class="musik-gambar img-fluid mb-1">
-            <h6 class="musik-judul">{{ $name4 }}</h6>
-            <p class="musik-isi">{{ $jabatan4 }}</p>
-            <p class="musik-isi">{{ $telp4 }}</p>
-            <p class="musik-isi">{{ $sektor4 }}</p>
-          </div>
-          <div class="col">
-            <img src="img/{{ $image4 }}" alt="Foto 4" class="musik-gambar img-fluid mb-1">
-            <h6 class="musik-judul">{{ $name4 }}</h6>
-            <p class="musik-isi">{{ $jabatan4 }}</p>
-            <p class="musik-isi">{{ $telp4 }}</p>
-            <p class="musik-isi">{{ $sektor4 }}</p>
-          </div>
-          <div class="col">
-            <img src="img/{{ $image4 }}" alt="Foto 4" class="musik-gambar img-fluid mb-1">
-            <h6 class="musik-judul">{{ $name4 }}</h6>
-            <p class="musik-isi">{{ $jabatan4 }}</p>
-            <p class="musik-isi">{{ $telp4 }}</p>
-            <p class="musik-isi">{{ $sektor4 }}</p>
-          </div>
-        </div>
-        <div class="row">
-          {{-- <!-- Baris Ketiga -->
-          <div class="col">
-            <img src="img/{{ $image5 }}" alt="Foto 5" class="musik-gambar img-fluid mb-1">
-            <h6 class="musik-judul">{{ $name5 }}</h6>
-            <p class="musik-isi">{{ $jabatan5 }}</p>
-            <p class="musik-isi">{{ $telp5 }}</p>
-            <p class="musik-isi">{{ $sektor5 }}</p>
-          </div>
-          <div class="col">
-            <img src="img/{{ $image6 }}" alt="Foto 6" class="musik-gambar img-fluid mb-1">
-            <h6 class="musik-judul">{{ $name6 }}</h6>
-            <p class="musik-isi">{{ $jabatan6 }}</p>
-            <p class="musik-isi">{{ $telp6 }}</p>
-            <p class="musik-isi">{{ $sektor6 }}</p>
-          </div>
-          <div class="col">
-            <img src="img/{{ $image7 }}" alt="Foto 7" class="musik-gambar img-fluid mb-1">
-            <h6 class="musik-judul">{{ $name7 }}</h6>
-            <p class="musik-isi">{{ $jabatan7 }}</p>
-            <p class="musik-isi">{{ $telp7 }}</p>
-            <p class="musik-isi">{{ $sektor7 }}</p>
-          </div>
-          <div class="row">
-            <!-- Baris Keempat -->
-            <div class="col">
-              <img src="img/{{ $image8 }}" alt="Foto 8" class="musik-gambar img-fluid mb-1">
-              <h6 class="musik-judul">{{ $name8 }}</h6>
-              <p class="musik-isi">{{ $jabatan8 }}</p>
-              <p class="musik-isi">{{ $telp8 }}</p>
-              <p class="musik-isi">{{ $sektor8 }}</p>
+        <div class="row py-4 justify-content-center">
+          <!-- Foto-foto Musik -->
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3 text-center mb-3">
+            <div class="image-container">
+              <img src="img/D. Nainggolan.jpeg" alt="D. Nainggolan/br. Sipahutar" class="musik-gambar img-fluid mb-1">
             </div>
-            <div class="col">
-              <img src="img/{{ $image9 }}" alt="Foto 9" class="musik-gambar img-fluid mb-1">
-              <h6 class="musik-judul">{{ $name9 }}</h6>
-              <p class="musik-isi">{{ $jabatan9 }}</p>
-              <p class="musik-isi">{{ $telp9 }}</p>
-              <p class="musik-isi">{{ $sektor9 }}</p>
+            <h6 class="musik-judul">D. Nainggolan/br. Sipahutar</h6>
+            <p class="musik-isi">Ketua Sie. Musik</p>
+            <p class="musik-isi">081310926017</p>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3 text-center mb-3">
+            <div class="image-container">
+              <img src="img/Kak Ester.jpg" alt="Ester br. Tambunan" class="musik-gambar img-fluid mb-1">
             </div>
-            <div class="col">
-              <img src="img/{{ $image10 }}" alt="Foto 10" class="musik-gambar img-fluid mb-1">
-              <h6 class="musik-judul">{{ $name10 }}</h6>
-              <p class="musik-isi">{{ $jabatan10 }}</p>
-              <p class="musik-isi">{{ $telp10 }}</p>
-              <p class="musik-isi">{{ $sektor10 }}</p>
+            <h6 class="musik-judul">Ester br. Tambunan</h6>
+            <p class="musik-isi">Koordinator Organis</p>
+            <p class="musik-isi">089616469715</p>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3 text-center mb-3">
+            <div class="image-container">
+              <img src="img/Given.jpeg" alt="Given Gultom" class="musik-gambar img-fluid mb-1">
             </div>
-            <div class="col">
-              <img src="img/{{ $image11 }}" alt="Foto 11" class="musik-gambar img-fluid mb-1">
-              <h6 class="musik-judul">{{ $name11 }}</h6>
-              <p class="musik-isi">{{ $jabatan11 }}</p>
-              <p class="musik-isi">{{ $telp11 }}</p>
-              <p class="musik-isi">{{ $sektor11 }}</p>
+            <h6 class="musik-judul">Given Gultom</h6>
+            <p class="musik-isi">Organis</p>
+            <p class="musik-isi">081214786327</p>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3 text-center mb-3">
+            <div class="image-container">
+              <img src="img/Yabes.jpeg" alt="Yabes br. Simanungkalit" class="musik-gambar img-fluid mb-1">
             </div>
-            <div class="col">
-              <img src="img/{{ $image12 }}" alt="Foto 12" class="musik-gambar img-fluid mb-1">
-              <h6 class="musik-judul">{{ $name12 }}</h6>
-              <p class="musik-isi">{{ $jabatan12 }}</p>
-              <p class="musik-isi">{{ $telp12 }}</p>
-              <p class="musik-isi">{{ $sektor12 }}</p>
-            </div> --}}
+            <h6 class="musik-judul">Yabes br. Simanungkalit</h6>
+            <p class="musik-isi">Organis</p>
+            <p class="musik-isi">081287283630</p>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3 text-center mb-3">
+            <div class="image-container">
+              <img src="img/Inang br. Malau.jpg" alt="Ny. Sitorus/br. Malau" class="musik-gambar img-fluid mb-1">
+            </div>
+            <h6 class="musik-judul">Ny. Sitorus/br. Malau</h6>
+            <p class="musik-isi">Song Leader</p>
+            <p class="musik-isi">081286452107</p>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3 text-center mb-3">
+            <div class="image-container">
+              <img src="img/Inang br. Sagala.jpg" alt="Ny. Gultom/br. Sagala" class="musik-gambar img-fluid mb-1">
+            </div>
+            <h6 class="musik-judul">Ny. Gultom/br. Sagala</h6>
+            <p class="musik-isi">Song Leader</p>
+            <p class="musik-isi">081380610787</p>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3 text-center mb-3">
+            <div class="image-container">
+              <img src="img/Papi.jpg" alt="M. Sinambela" class="musik-gambar img-fluid mb-1">
+            </div>
+            <h6 class="musik-judul">M. Sinambela/St. H. br. Tampubolon</h6>
+            <p class="musik-isi">Song Leader</p>
+            <p class="musik-isi">081315818350</p>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3 text-center mb-3">
+            <div class="image-container">
+              <img src="img/R. Samosir.jpeg" alt="R. Samosir/br. Sagala" class="musik-gambar img-fluid mb-1">
+            </div>
+            <h6 class="musik-judul">R. Samosir/br. Sagala</h6>
+            <p class="musik-isi">Song Leader</p>
+            <p class="musik-isi">081320011112</p>
+          </div>
         </div>
-    </div>
 </section>
 @endsection
 
@@ -274,36 +78,77 @@
         width: 100% !important;
         text-align: center;
         padding-top: 8%;
-        padding-bottom: 4%;
-        /* justify-content: center !important;
-        align-content: center !important; */
+        padding-bottom: 2%;
     }
 
     .musik-judul {
         margin-bottom: 1px !important;
-        /* margin-top: 1px !important; */
         font-weight: bold !important;
-        text-align: center;
     }
 
     .musik-isi{
         margin-bottom: 1px !important;
         font-size: 14px;
-        text-align: center;
     }
 
     .musik-gambar {
         width: 150px !important;
         height: 210px !important;
+        object-fit: cover;
     }
 
-    .pertama-musik {
-      padding-right: 43% !important;
-      padding-left: 43% !important;
+    .image-container {
+        overflow: hidden;
+        max-width: 100%;
+        max-height: 210px;
     }
 
-    .kedua-musik {
-      padding-right: 8% !important;
-      padding-left: 8% !important;
+    @media (max-width: 576px) {
+        .kedua-musik .col, .row .col {
+            flex: 0 0 100%;
+            max-width: 100%;
+            margin-bottom: 15px;
+        }
+
+        .musik {
+        padding-top: 18% !important;
+        padding-bottom: 2%;
+    }
+    }
+
+    @media (min-width: 577px) and (max-width: 768px) { 
+        .kedua-musik .col {
+            flex: 0 0 50%;
+            max-width: 50%;
+        }
+
+        .musik {
+        padding-top: 16% !important;
+        padding-bottom: 2%;
+    }
+    }
+
+    @media (min-width: 769px) and (max-width: 992px) {
+        .kedua-musik .col, .row .col {
+            flex: 0 0 33.3333%;
+            max-width: 33.3333%;
+        }
+
+        .musik {
+        padding-top: 14% !important;
+        padding-bottom: 2%;
+    }
+    }
+
+    @media (min-width: 993px) {
+        .kedua-musik .col {
+            flex: 0 0 25%;
+            max-width: 25%;
+        }
+    }
+
+    .row {
+        margin-right: 0 !important;
+        margin-left: 0 !important;
     }
 </style>

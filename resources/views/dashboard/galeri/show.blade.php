@@ -1,5 +1,4 @@
 @extends('dashboard.layouts.main')
-
 @section('container')
 <section class="detail-section mb-5">
     <div class="galeri-detail-hero">

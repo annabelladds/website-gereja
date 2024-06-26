@@ -1,102 +1,49 @@
 @extends('layouts.main')
-
 @section('container')
 <section class="zending-section">
     <div class="zending">
-        <div class="row pertama-zending py-4">
-          <!-- Baris Pertama -->
-          <div class="col text-center">
-            <img src="img/{{ $image }}" alt="Foto 1" class="zending-gambar img-fluid mb-1">
-            <h6 class="zending-judul">{{ $name }}</h6>
-            <p class="zending-isi">{{ $jabatan }}</p>
-            <p class="zending-isi">{{ $telp }}</p>
-            <p class="zending-isi">{{ $sektor }}</p>
-          </div>
-        </div>
-        <div class="row kedua-zending py-4">
-          <!-- Baris Kedua -->
-          <div class="col">
-            <img src="img/{{ $image2 }}" alt="Foto 2" class="zending-gambar img-fluid mb-1">
-            <h6 class="zending-judul">{{ $name2 }}</h6>
-            <p class="zending-isi">{{ $jabatan2 }}</p>
-            <p class="zending-isi">{{ $telp2 }}</p>
-            <p class="zending-isi">{{ $sektor2 }}</p>
-          </div>
-          <div class="col">
-            <img src="img/{{ $image3 }}" alt="Foto 3" class="zending-gambar img-fluid mb-1">
-            <h6 class="zending-judul">{{ $name3 }}</h6>
-            <p class="zending-isi">{{ $jabatan3 }}</p>
-            <p class="zending-isi">{{ $telp3 }}</p>
-            <p class="zending-isi">{{ $sektor3 }}</p>
-          </div>
-          <div class="col">
-            <img src="img/{{ $image4 }}" alt="Foto 4" class="zending-gambar img-fluid mb-1">
-            <h6 class="zending-judul">{{ $name4 }}</h6>
-            <p class="zending-isi">{{ $jabatan4 }}</p>
-            <p class="zending-isi">{{ $telp4 }}</p>
-            <p class="zending-isi">{{ $sektor4 }}</p>
-          </div>
-        </div>
-        {{-- <div class="row"> --}}
-          {{-- <!-- Baris Ketiga -->
-          <div class="col">
-            <img src="img/{{ $image5 }}" alt="Foto 5" class="zending-gambar img-fluid mb-1">
-            <h6 class="zending-judul">{{ $name5 }}</h6>
-            <p class="zending-isi">{{ $jabatan5 }}</p>
-            <p class="zending-isi">{{ $telp5 }}</p>
-            <p class="zending-isi">{{ $sektor5 }}</p>
-          </div>
-          <div class="col">
-            <img src="img/{{ $image6 }}" alt="Foto 6" class="zending-gambar img-fluid mb-1">
-            <h6 class="zending-judul">{{ $name6 }}</h6>
-            <p class="zending-isi">{{ $jabatan6 }}</p>
-            <p class="zending-isi">{{ $telp6 }}</p>
-            <p class="zending-isi">{{ $sektor6 }}</p>
-          </div>
-          <div class="col">
-            <img src="img/{{ $image7 }}" alt="Foto 7" class="zending-gambar img-fluid mb-1">
-            <h6 class="zending-judul">{{ $name7 }}</h6>
-            <p class="zending-isi">{{ $jabatan7 }}</p>
-            <p class="zending-isi">{{ $telp7 }}</p>
-            <p class="zending-isi">{{ $sektor7 }}</p>
-          </div>
-          <div class="row">
-            <!-- Baris Keempat -->
-            <div class="col">
-              <img src="img/{{ $image8 }}" alt="Foto 8" class="zending-gambar img-fluid mb-1">
-              <h6 class="zending-judul">{{ $name8 }}</h6>
-              <p class="zending-isi">{{ $jabatan8 }}</p>
-              <p class="zending-isi">{{ $telp8 }}</p>
-              <p class="zending-isi">{{ $sektor8 }}</p>
+        <div class="row py-4 justify-content-center">
+            <!-- Foto-foto Zending -->
+            <div class="col-12 col-sm-6 col-md-4 col-lg-2 text-center mb-3">
+                <div class="image-container">
+                  <img src="img/Inang br. Sirait.jpeg" alt="Ny. St. H. Manurung/br. Sirait" class="zending-gambar img-fluid mb-1">
+                </div>
+                <h6 class="zending-judul">Ny. St. H. Manurung/br. Sirait</h6>
+                <p class="zending-isi">Team Doa</p>
+                <p class="zending-isi">081383534573</p>
             </div>
-            <div class="col">
-              <img src="img/{{ $image9 }}" alt="Foto 9" class="zending-gambar img-fluid mb-1">
-              <h6 class="zending-judul">{{ $name9 }}</h6>
-              <p class="zending-isi">{{ $jabatan9 }}</p>
-              <p class="zending-isi">{{ $telp9 }}</p>
-              <p class="zending-isi">{{ $sektor9 }}</p>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-2 text-center mb-3">
+                <div class="image-container">
+                  <img src="img/Inang br. Simatupang.jpeg" alt="Ny. Panjaitan/br. Simatupang" class="zending-gambar img-fluid mb-1">
+                </div>
+                <h6 class="zending-judul">Ny. Panjaitan/br. Simatupang</h6>
+                <p class="zending-isi">Team Doa</p>
+                <p class="zending-isi">085284548476</p>
             </div>
-            <div class="col">
-              <img src="img/{{ $image10 }}" alt="Foto 10" class="zending-gambar img-fluid mb-1">
-              <h6 class="zending-judul">{{ $name10 }}</h6>
-              <p class="zending-isi">{{ $jabatan10 }}</p>
-              <p class="zending-isi">{{ $telp10 }}</p>
-              <p class="zending-isi">{{ $sektor10 }}</p>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-2 text-center mb-3">
+                <div class="image-container">
+                  <img src="img/D. Pardede.jpg" alt="D. Pardede" class="zending-gambar img-fluid mb-1">
+                </div>
+                <h6 class="zending-judul">D. Pardede</h6>
+                <p class="zending-isi">Team Doa</p>
+                <p class="zending-isi">081280870887</p>
             </div>
-            <div class="col">
-              <img src="img/{{ $image11 }}" alt="Foto 11" class="zending-gambar img-fluid mb-1">
-              <h6 class="zending-judul">{{ $name11 }}</h6>
-              <p class="zending-isi">{{ $jabatan11 }}</p>
-              <p class="zending-isi">{{ $telp11 }}</p>
-              <p class="zending-isi">{{ $sektor11 }}</p>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-2 text-center mb-3">
+                <div class="image-container">
+                  <img src="img/Mama.jpeg" alt="St. H. br. Tampubolon" class="zending-gambar img-fluid mb-1">
+                </div>
+                <h6 class="zending-judul">St. H. br. Tampubolon</h6>
+                <p class="zending-isi">Team Doa</p>
+                <p class="zending-isi">082115141040</p>
             </div>
-            <div class="col">
-              <img src="img/{{ $image12 }}" alt="Foto 12" class="zending-gambar img-fluid mb-1">
-              <h6 class="zending-judul">{{ $name12 }}</h6>
-              <p class="zending-isi">{{ $jabatan12 }}</p>
-              <p class="zending-isi">{{ $telp12 }}</p>
-              <p class="zending-isi">{{ $sektor12 }}</p>
-            </div> --}}
+            <div class="col-12 col-sm-6 col-md-4 col-lg-2 text-center mb-3">
+                <div class="image-container">
+                  <img src="img/St. Simaremare.jpeg" alt="St. Ronald Simaremare" class="zending-gambar img-fluid mb-1">
+                </div>
+                <h6 class="zending-judul">St. Ronald Simaremare</h6>
+                <p class="zending-isi">Team Doa</p>
+                <p class="zending-isi">081315214822</p>
+            </div>
         </div>
     </div>
 </section>
@@ -108,36 +55,73 @@
         width: 100% !important;
         text-align: center;
         padding-top: 8%;
-        padding-bottom: 4%;
-        /* justify-content: center !important;
-        align-content: center !important; */
+        padding-bottom: 2%;
     }
 
     .zending-judul {
         margin-bottom: 1px !important;
-        /* margin-top: 1px !important; */
         font-weight: bold !important;
-        text-align: center;
     }
 
-    .zending-isi{
+    .zending-isi {
         margin-bottom: 1px !important;
         font-size: 14px;
-        text-align: center;
     }
 
     .zending-gambar {
         width: 150px !important;
         height: 210px !important;
+        object-fit: cover;
     }
 
-    .pertama-zending {
-      padding-right: 43% !important;
-      padding-left: 43% !important;
+    .image-container {
+        overflow: hidden;
+        max-width: 100%;
+        max-height: 210px;
     }
 
-    .kedua-zending {
-      padding-right: 29% !important;
-      padding-left: 29% !important;
+    @media (max-width: 576px) {
+        .col-12 {
+            flex: 0 0 100%;
+            max-width: 100%;
+        }
+
+        .zending {
+            padding-top: 18% !important;
+        }
+    }
+
+    @media (min-width: 577px) and (max-width: 768px) {
+        .col-12.col-sm-6 {
+            flex: 0 0 50%;
+            max-width: 50%;
+        }
+
+        .zending {
+            padding-top: 16% !important;
+        }
+    }
+
+    @media (min-width: 769px) and (max-width: 992px) {
+        .col-12.col-sm-6.col-md-4 {
+            flex: 0 0 33.3333%;
+            max-width: 33.3333%;
+        }
+
+        .zending {
+            padding-top: 14% !important;
+        }
+    }
+
+    @media (min-width: 993px) {
+        .col-12.col-sm-6.col-md-4.col-lg-2 {
+            flex: 0 0 20%;
+            max-width: 20%;
+        }
+    }
+
+    .row {
+        margin-right: 0 !important;
+        margin-left: 0 !important;
     }
 </style>

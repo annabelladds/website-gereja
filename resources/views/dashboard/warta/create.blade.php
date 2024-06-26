@@ -1,10 +1,8 @@
 @extends('dashboard.layouts.main')
-
 @section('container')
 <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
-    <h1 class="h2">Membuat Warta Jemaat Baru</h1>
+    <h4 class="h4">Membuat Warta Jemaat Baru</h4>
   </div>
-
   <form method="post" action="/dashboard/warta" class="mb-5" enctype="multipart/form-data">
     @csrf
     <div class="mb-3">
@@ -36,42 +34,18 @@
       </div>
     <button type="submit" class="btn btn-primary">Kirim</button>
   </form>
-
   <script>
-    // const file = document.querySelector("#file");
-    // const slug = document.querySelector("#slug");
-
-    // file.addEventListener("keyup", function() {
-    //     let preslug = file.value;
-    //     preslug = preslug.replace(/ /g,"-");
-    //     slug.value = preslug.toLowerCase();
-    // });
-
-//     document.addEventListener("DOMContentLoaded", function() {
-//     const fileInput = document.querySelector("#file");
-//     const slugInput = document.querySelector("#slug");
-
-//     fileInput.addEventListener("change", function() {
-//         let fileName = fileInput.files[0].name; // Ambil nama file
-//         fileName = fileName.substring(0, fileName.lastIndexOf('.')); // Hapus ekstensi file
-//         let preslug = fileName.replace(/ /g, "-"); // Ganti spasi dengan "-"
-//         slugInput.value = preslug.toLowerCase(); // Ubah menjadi huruf kecil
-//     });
-// });
-
 document.addEventListener("DOMContentLoaded", function() {
     const fileInput = document.querySelector("#file");
     const slugInput = document.querySelector("#slug");
-
     fileInput.addEventListener("change", function() {
         if (fileInput.files.length > 0) {
-            let fileName = fileInput.files[0].name; // Ambil nama file
-            fileName = fileName.substring(0, fileName.lastIndexOf('.')); // Hapus ekstensi file
-            let preslug = fileName.replace(/ /g, "-"); // Ganti spasi dengan "-"
-            slugInput.value = preslug.toLowerCase() + ".pdf"; // Ubah menjadi huruf kecil dan tambahkan .pdf
+            let fileName = fileInput.files[0].name;
+            fileName = fileName.substring(0, fileName.lastIndexOf('.'));
+            let preslug = fileName.replace(/ /g, "-");
+            slugInput.value = preslug.toLowerCase() + ".pdf";
         }
     });
 });
-
 </script>
 @endsection

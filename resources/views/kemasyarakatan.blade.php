@@ -1,133 +1,74 @@
 @extends('layouts.main')
-
 @section('container')
 <section class="kemasyarakatan-section">
     <div class="kemasyarakatan">
-        <div class="row pertama-kemasyarakatan py-4">
-          <!-- Baris Pertama -->
-          <div class="col text-center">
-            <img src="img/{{ $image }}" alt="Foto 1" class="kemasyarakatan-gambar img-fluid mb-1">
-            <h6 class="kemasyarakatan-judul">{{ $name }}</h6>
-            <p class="kemasyarakatan-isi">{{ $jabatan }}</p>
-            <p class="kemasyarakatan-isi">{{ $telp }}</p>
-            <p class="kemasyarakatan-isi">{{ $sektor }}</p>
-          </div>
-        </div>
-        <div class="row kedua-kemasyarakatan py-4">
-          <!-- Baris Kedua -->
-          <div class="col">
-            <img src="img/{{ $image2 }}" alt="Foto 2" class="kemasyarakatan-gambar img-fluid mb-1">
-            <h6 class="kemasyarakatan-judul">{{ $name2 }}</h6>
-            <p class="kemasyarakatan-isi">{{ $jabatan2 }}</p>
-            <p class="kemasyarakatan-isi">{{ $telp2 }}</p>
-            <p class="kemasyarakatan-isi">{{ $sektor2 }}</p>
-          </div>
-          <div class="col">
-            <img src="img/{{ $image3 }}" alt="Foto 3" class="kemasyarakatan-gambar img-fluid mb-1">
-            <h6 class="kemasyarakatan-judul">{{ $name3 }}</h6>
-            <p class="kemasyarakatan-isi">{{ $jabatan3 }}</p>
-            <p class="kemasyarakatan-isi">{{ $telp3 }}</p>
-            <p class="kemasyarakatan-isi">{{ $sektor3 }}</p>
-          </div>
-          <div class="col">
-            <img src="img/{{ $image4 }}" alt="Foto 4" class="kemasyarakatan-gambar img-fluid mb-1">
-            <h6 class="kemasyarakatan-judul">{{ $name4 }}</h6>
-            <p class="kemasyarakatan-isi">{{ $jabatan4 }}</p>
-            <p class="kemasyarakatan-isi">{{ $telp4 }}</p>
-            <p class="kemasyarakatan-isi">{{ $sektor4 }}</p>
-          </div>
-          
-        </div>
-        <div class="row kedua-kemasyarakatan py-4">
-          <!-- Baris Ketiga -->
-          <div class="col">
-            <img src="img/{{ $image5 }}" alt="Foto 5" class="kemasyarakatan-gambar img-fluid mb-1">
-            <h6 class="kemasyarakatan-judul">{{ $name5 }}</h6>
-            <p class="kemasyarakatan-isi">{{ $jabatan5 }}</p>
-            <p class="kemasyarakatan-isi">{{ $telp5 }}</p>
-            <p class="kemasyarakatan-isi">{{ $sektor5 }}</p>
-          </div>
-          <div class="col">
-            <img src="img/{{ $image6 }}" alt="Foto 6" class="kemasyarakatan-gambar img-fluid mb-1">
-            <h6 class="kemasyarakatan-judul">{{ $name6 }}</h6>
-            <p class="kemasyarakatan-isi">{{ $jabatan6 }}</p>
-            <p class="kemasyarakatan-isi">{{ $telp6 }}</p>
-            <p class="kemasyarakatan-isi">{{ $sektor6 }}</p>
-          </div>
-          <div class="col">
-            <img src="img/{{ $image7 }}" alt="Foto 7" class="kemasyarakatan-gambar img-fluid mb-1">
-            <h6 class="kemasyarakatan-judul">{{ $name7 }}</h6>
-            <p class="kemasyarakatan-isi">{{ $jabatan7 }}</p>
-            <p class="kemasyarakatan-isi">{{ $telp7 }}</p>
-            <p class="kemasyarakatan-isi">{{ $sektor7 }}</p>
-          </div>
-        </div>
-          {{-- <div class="row">
-            <!-- Baris Keempat -->
-            <div class="col">
-              <img src="img/{{ $image10 }}" alt="Foto 10" class="kemasyarakatan-gambar img-fluid mb-1">
-              <h6 class="kemasyarakatan-judul">{{ $name10 }}</h6>
-              <p class="kemasyarakatan-isi">{{ $jabatan10 }}</p>
-              <p class="kemasyarakatan-isi">{{ $telp10 }}</p>
-              <p class="kemasyarakatan-isi">{{ $sektor10 }}</p>
+        <div class="row py-4 justify-content-center">
+          <!-- Foto-foto Kemasyrakatan -->
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3 text-center mb-3">
+            <div class="image-container">
+              <img src="img/R. Manik.jpeg" alt="R. Manik/br. Panjaitan" class="kemasyarakatan-gambar img-fluid mb-1">
             </div>
-            <div class="col">
-              <img src="img/{{ $image11 }}" alt="Foto 11" class="kemasyarakatan-gambar img-fluid mb-1">
-              <h6 class="kemasyarakatan-judul">{{ $name11 }}</h6>
-              <p class="kemasyarakatan-isi">{{ $jabatan11 }}</p>
-              <p class="kemasyarakatan-isi">{{ $telp11 }}</p>
-              <p class="kemasyarakatan-isi">{{ $sektor11 }}</p>
-            </div>
-            <div class="col">
-              <img src="img/{{ $image12 }}" alt="Foto 12" class="kemasyarakatan-gambar img-fluid mb-1">
-              <h6 class="kemasyarakatan-judul">{{ $name12 }}</h6>
-              <p class="kemasyarakatan-isi">{{ $jabatan12 }}</p>
-              <p class="kemasyarakatan-isi">{{ $telp12 }}</p>
-              <p class="kemasyarakatan-isi">{{ $sektor12 }}</p>
-            </div> --}}
-        
-    </div>
+            <h6 class="kemasyarakatan-judul">R. Manik/br. Panjaitan</h6>
+            <p class="kemasyarakatan-isi">Ketua Sie. Kemasyrakatan</p>
+            <p class="kemasyarakatan-isi">082124410023</p>
+        </div>
 </section>
 @endsection
 
 <style>
+ .kemasyarakatan {
+    font-family: 'Nunito';
+    width: 100%;
+    text-align: center;
+    padding-top: 8%;
+    padding-bottom: 2%;
+}
+
+.kemasyarakatan-judul {
+    margin-bottom: 1px;
+    font-weight: bold;
+}
+
+.kemasyarakatan-isi {
+    margin-bottom: 1px;
+    font-size: 14px;
+}
+
+.kemasyarakatan-gambar {
+    width: 150px;
+    height: 210px;
+    object-fit: cover;
+}
+
+.image-container {
+    overflow: hidden;
+    max-width: 100%;
+    max-height: 210px;
+}
+
+@media (max-width: 576px) {
     .kemasyarakatan {
-        font-family: 'Nunito';
-        width: 100% !important;
-        text-align: center;
-        padding-top: 8%;
-        padding-bottom: 4%;
-        /* justify-content: center !important;
-        align-content: center !important; */
+        padding-top: 18%;
+        padding-bottom: 2%;
     }
+}
 
-    .kemasyarakatan-judul {
-        margin-bottom: 1px !important;
-        /* margin-top: 1px !important; */
-        font-weight: bold !important;
-        text-align: center;
+@media (min-width: 577px) and (max-width: 768px) {
+    .kemasyarakatan {
+        padding-top: 16%;
+        padding-bottom: 2%;
     }
+}
 
-    .kemasyarakatan-isi{
-        margin-bottom: 1px !important;
-        font-size: 14px;
-        text-align: center;
+@media (min-width: 769px) and (max-width: 992px) {
+    .kemasyarakatan {
+        padding-top: 14%;
+        padding-bottom: 2%;
     }
+}
 
-    .kemasyarakatan-gambar {
-        width: 150px !important;
-        height: 210px !important;
-        padding-right: 1px !important;
-        padding-left: 1px !important;
-    }
-
-    .pertama-kemasyarakatan {
-      padding-right: 43% !important;
-      padding-left: 43% !important;
-    }
-
-    .kedua-kemasyarakatan {
-      padding-right: 29% !important;
-      padding-left: 29% !important;
-    }
+.row {
+    margin-right: 0;
+    margin-left: 0;
+}
 </style>

@@ -1,104 +1,91 @@
 @extends('layouts.main')
-
 @section('container')
 <section class="remaja-section">
     <div class="remaja">
-        <div class="row py-4">
-          <!-- Baris Pertama -->
-          <div class="col text-center">
-            <img src="img/{{ $image }}" alt="Foto 1" class="remaja-gambar img-fluid mb-1">
-            <h6 class="remaja-judul">{{ $name }}</h6>
-            <p class="remaja-isi">{{ $jabatan }}</p>
-            <p class="remaja-isi">{{ $telp }}</p>
-            <p class="remaja-isi">{{ $sektor }}</p>
-          </div>
-        </div>
-        <div class="row pertama-remaja py-4">
-          <!-- Baris Kedua -->
-          <div class="col">
-            <img src="img/{{ $image2 }}" alt="Foto 2" class="remaja-gambar img-fluid mb-1">
-            <h6 class="remaja-judul">{{ $name2 }}</h6>
-            <p class="remaja-isi">{{ $jabatan2 }}</p>
-            <p class="remaja-isi">{{ $telp2 }}</p>
-            <p class="remaja-isi">{{ $sektor2 }}</p>
-          </div>
-          <div class="col">
-            <img src="img/{{ $image3 }}" alt="Foto 3" class="remaja-gambar img-fluid mb-1">
-            <h6 class="remaja-judul">{{ $name3 }}</h6>
-            <p class="remaja-isi">{{ $jabatan3 }}</p>
-            <p class="remaja-isi">{{ $telp3 }}</p>
-            <p class="remaja-isi">{{ $sektor3 }}</p>
-          </div>
-          <div class="col">
-            <img src="img/{{ $image4 }}" alt="Foto 4" class="remaja-gambar img-fluid mb-1">
-            <h6 class="remaja-judul">{{ $name4 }}</h6>
-            <p class="remaja-isi">{{ $jabatan4 }}</p>
-            <p class="remaja-isi">{{ $telp4 }}</p>
-            <p class="remaja-isi">{{ $sektor4 }}</p>
-          </div>
-          <div class="col">
-            <img src="img/{{ $image5 }}" alt="Foto 5" class="remaja-gambar img-fluid mb-1">
-            <h6 class="remaja-judul">{{ $name5 }}</h6>
-            <p class="remaja-isi">{{ $jabatan5 }}</p>
-            <p class="remaja-isi">{{ $telp5 }}</p>
-            <p class="remaja-isi">{{ $sektor5 }}</p>
-          </div>
-        </div>
-        <div class="row kedua-remaja py-4">
-          <!-- Baris Ketiga -->
-          <div class="col">
-            <img src="img/{{ $image6 }}" alt="Foto 6" class="remaja-gambar img-fluid mb-1">
-            <h6 class="remaja-judul">{{ $name6 }}</h6>
-            <p class="remaja-isi">{{ $jabatan6 }}</p>
-            <p class="remaja-isi">{{ $telp6 }}</p>
-            <p class="remaja-isi">{{ $sektor6 }}</p>
-          </div>
-          <div class="col">
-            <img src="img/{{ $image7 }}" alt="Foto 7" class="remaja-gambar img-fluid mb-1">
-            <h6 class="remaja-judul">{{ $name7 }}</h6>
-            <p class="remaja-isi">{{ $jabatan7 }}</p>
-            <p class="remaja-isi">{{ $telp7 }}</p>
-            <p class="remaja-isi">{{ $sektor7 }}</p>
-          </div>
-          <div class="col">
-            <img src="img/{{ $image8 }}" alt="Foto 8" class="remaja-gambar img-fluid mb-1">
-            <h6 class="remaja-judul">{{ $name8 }}</h6>
-            <p class="remaja-isi">{{ $jabatan8 }}</p>
-            <p class="remaja-isi">{{ $telp8 }}</p>
-            <p class="remaja-isi">{{ $sektor8 }}</p>
-          </div>
-        </div>
-          <div class="row pertama-remaja py-4">
-            <!-- Baris Keempat -->
-            <div class="col">
-              <img src="img/{{ $image9 }}" alt="Foto 9" class="remaja-gambar img-fluid mb-1">
-              <h6 class="remaja-judul">{{ $name9 }}</h6>
-              <p class="remaja-isi">{{ $jabatan9 }}</p>
-              <p class="remaja-isi">{{ $telp9 }}</p>
-              <p class="remaja-isi">{{ $sektor9 }}</p>
+        <div class="row py-4 justify-content-center">
+            <!-- Foto-foto Remaja -->
+            <div class="col-12 col-sm-6 col-md-4 col-lg-2 text-center mb-3">
+                <div class="image-container">
+                    <img src="img/St. Marbun.jpeg" alt="St. K. Marbun" class="remaja-gambar img-fluid mb-1">
+                </div>
+                <h6 class="remaja-judul">St. K. Marbun</h6>
+                <p class="remaja-isi">Paniroi Remaja</p>
+                <p class="remaja-isi">081286984013</p>
             </div>
-            <div class="col">
-              <img src="img/{{ $image10 }}" alt="Foto 10" class="remaja-gambar img-fluid mb-1">
-              <h6 class="remaja-judul">{{ $name10 }}</h6>
-              <p class="remaja-isi">{{ $jabatan10 }}</p>
-              <p class="remaja-isi">{{ $telp10 }}</p>
-              <p class="remaja-isi">{{ $sektor10 }}</p>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-2 text-center mb-3">
+                <div class="image-container">
+                    <img src="img/Maria.jpg" alt="Maria br. Siagian" class="remaja-gambar img-fluid mb-1">
+                </div>
+                <h6 class="remaja-judul">Maria br. Siagian</h6>
+                <p class="remaja-isi">Ketua Remaja</p>
+                <p class="remaja-isi">085961635477</p>
             </div>
-            <div class="col">
-              <img src="img/{{ $image11 }}" alt="Foto 11" class="remaja-gambar img-fluid mb-1">
-              <h6 class="remaja-judul">{{ $name11 }}</h6>
-              <p class="remaja-isi">{{ $jabatan11 }}</p>
-              <p class="remaja-isi">{{ $telp11 }}</p>
-              <p class="remaja-isi">{{ $sektor11 }}</p>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-2 text-center mb-3">
+                <div class="image-container">
+                    <img src="img/Yabes.jpeg" alt="Yabes br. Simanungkalit" class="remaja-gambar img-fluid mb-1">
+                </div>
+                <h6 class="remaja-judul">Yabes br. Simanungkalit</h6>
+                <p class="remaja-isi">Wakil Ketua Remaja</p>
+                <p class="remaja-isi">081287283630</p>
             </div>
-            <div class="col">
-              <img src="img/{{ $image12 }}" alt="Foto 12" class="remaja-gambar img-fluid mb-1">
-              <h6 class="remaja-judul">{{ $name12 }}</h6>
-              <p class="remaja-isi">{{ $jabatan12 }}</p>
-              <p class="remaja-isi">{{ $telp12 }}</p>
-              <p class="remaja-isi">{{ $sektor12 }}</p>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-2 text-center mb-3">
+                <div class="image-container">
+                    <img src="img/Gyta.jpg" alt="Gyta br. Gultom" class="remaja-gambar img-fluid mb-1">
+                </div>
+                <h6 class="remaja-judul">Gyta br. Gultom</h6>
+                <p class="remaja-isi">Sekretaris Remaja</p>
+                <p class="remaja-isi">081317773263</p>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-2 text-center mb-3">
+                <div class="image-container">
+                    <img src="img/Monicha.jpg" alt="Monik br. Tambunan" class="remaja-gambar img-fluid mb-1">
+                </div>
+                <h6 class="remaja-judul">Monicha br. Tambunan</h6>
+                <p class="remaja-isi">Bendahara Remaja</p>
+                <p class="remaja-isi">089602404689</p>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-2 text-center mb-3">
+                <div class="image-container">
+                    <img src="img/naomi.jpg" alt="Naomi br. Panjaitan" class="remaja-gambar img-fluid mb-1">
+                </div>
+                <h6 class="remaja-judul">Naomi br. Panjaitan</h6>
+                <p class="remaja-isi">Sie. Acara</p>
+                <p class="remaja-isi">085691742045</p>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-2 text-center mb-3">
+                <div class="image-container">
+                    <img src="img/Marissa.jpg" alt="Marissa br. Siahaan" class="remaja-gambar img-fluid mb-1">
+                </div>
+                <h6 class="remaja-judul">Marissa br. Siahaan</h6>
+                <p class="remaja-isi">Sie. Koor</p>
+                <p class="remaja-isi">085775551388</p>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-2 text-center mb-3">
+                <div class="image-container">
+                    <img src="img/Putri.jpg" alt="Putri br. Simaremare" class="remaja-gambar img-fluid mb-1">
+                </div>
+                <h6 class="remaja-judul">Putri br. Simaremare</h6>
+                <p class="remaja-isi">Sie. Humas</p>
+                <p class="remaja-isi">085213967324</p>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-2 text-center mb-3">
+                <div class="image-container">
+                    <img src="img/Gideon.jpg" alt="Gideon Gultom" class="remaja-gambar img-fluid mb-1">
+                </div>
+                <h6 class="remaja-judul">Gideon Gultom</h6>
+                <p class="remaja-isi">Sie. Musik</p>
+                <p class="remaja-isi">088289045008</p>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-2 text-center mb-3">
+                <div class="image-container">
+                    <img src="img/Stanly.jpeg" alt="Stanly Sagala" class="remaja-gambar img-fluid mb-1">
+                </div>
+                <h6 class="remaja-judul">Stanly Sagala</h6>
+                <p class="remaja-isi">Sie. Musik</p>
+                <p class="remaja-isi">081389719238</p>
             </div>
         </div>
+    </div>
 </section>
 @endsection
 
@@ -108,36 +95,77 @@
         width: 100% !important;
         text-align: center;
         padding-top: 8%;
-        padding-bottom: 4%;
-        /* justify-content: center !important;
-        align-content: center !important; */
+        padding-bottom: 2%;
     }
 
     .remaja-judul {
         margin-bottom: 1px !important;
-        /* margin-top: 1px !important; */
         font-weight: bold !important;
-        text-align: center;
     }
 
     .remaja-isi{
         margin-bottom: 1px !important;
         font-size: 14px;
-        text-align: center;
     }
 
     .remaja-gambar {
         width: 150px !important;
         height: 210px !important;
+        object-fit: cover;
     }
 
-    .kedua-remaja {
-      padding-right: 29% !important;
-      padding-left: 29% !important;
+    .image-container {
+        overflow: hidden;
+        max-width: 100%;
+        max-height: 210px;
+        margin: 0 auto;
     }
 
-    .pertama-remaja {
-      padding-right: 22% !important;
-      padding-left: 22% !important;
+    @media (max-width: 576px) {
+        .col-12 {
+            flex: 0 0 100%;
+            max-width: 100%;
+        }
+
+        .remaja {
+            padding-top: 18% !important;
+            padding-bottom: 2%;
+        }
+    }
+
+    @media (min-width: 577px) and (max-width: 768px) {
+        .col-12 {
+            flex: 0 0 50%;
+            max-width: 50%;
+        }
+
+        .remaja {
+            padding-top: 16% !important;
+            padding-bottom: 2%;
+        }
+    }
+
+    @media (min-width: 769px) and (max-width: 992px) {
+        .col-12 {
+            flex: 0 0 33.3333%;
+            max-width: 33.3333%;
+        }
+
+        .remaja {
+            padding-top: 14% !important;
+            padding-bottom: 2%;
+        }
+    }
+
+    @media (min-width: 993px) {
+        .col-12 {
+            flex: 0 0 16.6667%;
+            max-width: 16.6667%;
+        }
+    }
+
+    .row {
+        margin-right: 0 !important;
+        margin-left: 0 !important;
     }
 </style>

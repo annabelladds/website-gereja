@@ -1,105 +1,74 @@
 @extends('layouts.main')
-
 @section('container')
 <section class="pendidikan-section">
     <div class="pendidikan">
-        <div class="row pertama-pendidikan py-4">
-          <!-- Baris Pertama -->
-          <div class="col text-center">
-            <img src="img/{{ $image }}" alt="Foto 1" class="pendidikan-gambar img-fluid mb-1">
-            <h6 class="pendidikan-judul">{{ $name }}</h6>
-            <p class="pendidikan-isi">{{ $jabatan }}</p>
-            <p class="pendidikan-isi">{{ $telp }}</p>
-            <p class="pendidikan-isi">{{ $sektor }}</p>
+        <div class="row py-4 justify-content-center">
+          <!-- Foto-foto Pendidikan -->
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3 text-center mb-3">
+            <div class="image-container">
+              <img src="img/Inang br. Hasugian.jpeg" alt="Ny. Sihombing/br. Hasugian" class="pendidikan-gambar img-fluid mb-1">
+            </div>
+            <h6 class="pendidikan-judul">Ny. Sihombing/br. Hasugian</h6>
+            <p class="pendidikan-isi">Ketua Sie. Pendidikan</p>
+            <p class="pendidikan-isi">081397162628</p>
           </div>
-          <div class="col text-center">
-            <img src="img/{{ $image2 }}" alt="Foto 2" class="pendidikan-gambar img-fluid mb-1">
-            <h6 class="pendidikan-judul">{{ $name2 }}</h6>
-            <p class="pendidikan-isi">{{ $jabatan2 }}</p>
-            <p class="pendidikan-isi">{{ $telp2 }}</p>
-            <p class="pendidikan-isi">{{ $sektor2 }}</p>
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3 text-center mb-3">
+            <div class="image-container">
+              <img src="img/Mama.jpeg" alt="St. H. br Tampubolon" class="pendidikan-gambar img-fluid mb-1">
+            </div>
+            <h6 class="pendidikan-judul">St. H. br Tampubolon</h6>
+            <p class="pendidikan-isi">Sie. Pendidikan</p>
+            <p class="pendidikan-isi">082115141040</p>
           </div>
-          <div class="col text-center">
-            <img src="img/{{ $image3 }}" alt="Foto 3" class="pendidikan-gambar img-fluid mb-1">
-            <h6 class="pendidikan-judul">{{ $name3 }}</h6>
-            <p class="pendidikan-isi">{{ $jabatan3 }}</p>
-            <p class="pendidikan-isi">{{ $telp3 }}</p>
-            <p class="pendidikan-isi">{{ $sektor3 }}</p>
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3 text-center mb-3">
+            <div class="image-container">
+              <img src="img/Kak Ester.JPG" alt="Ester br Tambunan" class="pendidikan-gambar img-fluid mb-1">
+            </div>
+            <h6 class="pendidikan-judul">Ester br Tambunan</h6>
+            <p class="pendidikan-isi">Sie. Pendidikan</p>
+            <p class="pendidikan-isi">089616469715</p>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3 text-center mb-3">
+            <div class="image-container">
+              <img src="img/Inang br. Sirait.jpeg" alt="Ny. St. H. Manurung/br. Sirait" class="pendidikan-gambar img-fluid mb-1">
+            </div>
+            <h6 class="pendidikan-judul">Ny. St. H. Manurung/br. Sirait</h6>
+            <p class="pendidikan-isi">Sie. Pendidikan</p>
+            <p class="pendidikan-isi">081383534573</p>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3 text-center mb-3">
+            <div class="image-container">
+              <img src="img/Inang br. Simatupang.jpeg" alt="Ny. Panjaitan/br. Simatupang" class="pendidikan-gambar img-fluid mb-1">
+            </div>
+            <h6 class="pendidikan-judul">Ny. Panjaitan/br. Simatupang</h6>
+            <p class="pendidikan-isi">Sie. Pendidikan</p>
+            <p class="pendidikan-isi">085284548476</p>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3 text-center mb-3">
+            <div class="image-container">
+              <img src="img/Inang br. Siregar.jpeg" alt="Ny. St. T. B Sitompul/br. Siregar" class="pendidikan-gambar img-fluid mb-1">
+            </div>
+            <h6 class="pendidikan-judul">Ny. St. T. B Sitompul/br. Siregar</h6>
+            <p class="pendidikan-isi">Sie. Pendidikan</p>
+            <p class="pendidikan-isi">081280455868</p>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3 text-center mb-3">
+            <div class="image-container">
+              <img src="img/eybel.jpg" alt="Annabella br. Sinambela" class="pendidikan-gambar img-fluid mb-1">
+            </div>
+            <h6 class="pendidikan-judul">Annabella br. Sinambela</h6>
+            <p class="pendidikan-isi">Sie. Pendidikan</p>
+            <p class="pendidikan-isi">081311554059</p>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3 text-center mb-3">
+            <div class="image-container">
+              <img src="img/Nadya.jpg" alt="Nadya br. Panjaitan" class="pendidikan-gambar img-fluid mb-1">
+            </div>
+            <h6 class="pendidikan-judul">Nadya br. Panjaitan</h6>
+            <p class="pendidikan-isi">Sie. Pendidikan</p>
+            <p class="pendidikan-isi">08979447304</p>
           </div>
         </div>
-        <div class="row kedua-pendidikan py-4">
-          <!-- Baris Kedua -->
-          <div class="col">
-            <img src="img/{{ $image4 }}" alt="Foto 4" class="pendidikan-gambar img-fluid mb-1">
-            <h6 class="pendidikan-judul">{{ $name4 }}</h6>
-            <p class="pendidikan-isi">{{ $jabatan4 }}</p>
-            <p class="pendidikan-isi">{{ $telp4 }}</p>
-            <p class="pendidikan-isi">{{ $sektor4 }}</p>
-          </div>
-          <div class="col">
-            <img src="img/{{ $image5 }}" alt="Foto 5" class="pendidikan-gambar img-fluid mb-1">
-            <h6 class="pendidikan-judul">{{ $name5 }}</h6>
-            <p class="pendidikan-isi">{{ $jabatan5 }}</p>
-            <p class="pendidikan-isi">{{ $telp5 }}</p>
-            <p class="pendidikan-isi">{{ $sektor5 }}</p>
-          </div>
-          <div class="col">
-            <img src="img/{{ $image6 }}" alt="Foto 6" class="pendidikan-gambar img-fluid mb-1">
-            <h6 class="pendidikan-judul">{{ $name6 }}</h6>
-            <p class="pendidikan-isi">{{ $jabatan6 }}</p>
-            <p class="pendidikan-isi">{{ $telp6 }}</p>
-            <p class="pendidikan-isi">{{ $sektor6 }}</p>
-          </div>
-          <div class="col">
-            <img src="img/{{ $image7 }}" alt="Foto 7" class="pendidikan-gambar img-fluid mb-1">
-            <h6 class="pendidikan-judul">{{ $name7 }}</h6>
-            <p class="pendidikan-isi">{{ $jabatan7 }}</p>
-            <p class="pendidikan-isi">{{ $telp7 }}</p>
-            <p class="pendidikan-isi">{{ $sektor7 }}</p>
-          </div>
-          <div class="col">
-            <img src="img/{{ $image8 }}" alt="Foto 8" class="pendidikan-gambar img-fluid mb-1">
-            <h6 class="pendidikan-judul">{{ $name8 }}</h6>
-            <p class="pendidikan-isi">{{ $jabatan8 }}</p>
-            <p class="pendidikan-isi">{{ $telp8 }}</p>
-            <p class="pendidikan-isi">{{ $sektor8 }}</p>
-          </div>
-          <div class="col">
-            <img src="img/{{ $image9 }}" alt="Foto 9" class="pendidikan-gambar img-fluid mb-1">
-            <h6 class="pendidikan-judul">{{ $name9 }}</h6>
-            <p class="pendidikan-isi">{{ $jabatan9 }}</p>
-            <p class="pendidikan-isi">{{ $telp9 }}</p>
-            <p class="pendidikan-isi">{{ $sektor9 }}</p>
-          </div>
-        </div>
-        {{-- <div class="row">
-          <!-- Baris Ketiga -->
-          
-          <div class="row">
-            <!-- Baris Keempat -->
-            <div class="col">
-              <img src="img/{{ $image10 }}" alt="Foto 10" class="pendidikan-gambar img-fluid mb-1">
-              <h6 class="pendidikan-judul">{{ $name10 }}</h6>
-              <p class="pendidikan-isi">{{ $jabatan10 }}</p>
-              <p class="pendidikan-isi">{{ $telp10 }}</p>
-              <p class="pendidikan-isi">{{ $sektor10 }}</p>
-            </div>
-            <div class="col">
-              <img src="img/{{ $image11 }}" alt="Foto 11" class="pendidikan-gambar img-fluid mb-1">
-              <h6 class="pendidikan-judul">{{ $name11 }}</h6>
-              <p class="pendidikan-isi">{{ $jabatan11 }}</p>
-              <p class="pendidikan-isi">{{ $telp11 }}</p>
-              <p class="pendidikan-isi">{{ $sektor11 }}</p>
-            </div>
-            <div class="col">
-              <img src="img/{{ $image12 }}" alt="Foto 12" class="pendidikan-gambar img-fluid mb-1">
-              <h6 class="pendidikan-judul">{{ $name12 }}</h6>
-              <p class="pendidikan-isi">{{ $jabatan12 }}</p>
-              <p class="pendidikan-isi">{{ $telp12 }}</p>
-              <p class="pendidikan-isi">{{ $sektor12 }}</p>
-            </div>
-        </div> --}}
-    </div>
 </section>
 @endsection
 
@@ -109,36 +78,77 @@
         width: 100% !important;
         text-align: center;
         padding-top: 8%;
-        padding-bottom: 4%;
-        /* justify-content: center !important;
-        align-content: center !important; */
+        padding-bottom: 2%;
     }
 
     .pendidikan-judul {
         margin-bottom: 1px !important;
-        /* margin-top: 1px !important; */
         font-weight: bold !important;
-        text-align: center;
     }
 
     .pendidikan-isi{
         margin-bottom: 1px !important;
         font-size: 14px;
-        text-align: center;
     }
 
     .pendidikan-gambar {
         width: 150px !important;
         height: 210px !important;
+        object-fit: cover;
     }
 
-    .pertama-pendidikan {
-      padding-right: 29% !important;
-      padding-left: 29% !important;
+    .image-container {
+        overflow: hidden;
+        max-width: 100%;
+        max-height: 210px;
     }
 
-    .kedua-pendidikan {
-      padding-right: 7% !important;
-      padding-left: 7% !important;
+    @media (max-width: 576px) { 
+        .kedua-pendidikan .col, .row .col {
+            flex: 0 0 100%;
+            max-width: 100%;
+            margin-bottom: 15px;
+        }
+
+        .pendidikan {
+        padding-top: 18% !important;
+        padding-bottom: 2%;
+    }
+    }
+
+    @media (min-width: 577px) and (max-width: 768px) { 
+        .kedua-pendidikan .col {
+            flex: 0 0 50%;
+            max-width: 50%;
+        }
+
+        .pendidikan {
+        padding-top: 16% !important;
+        padding-bottom: 2%;
+    }
+    }
+
+    @media (min-width: 769px) and (max-width: 992px) { 
+        .kedua-pendidikan .col, .row .col {
+            flex: 0 0 33.3333%;
+            max-width: 33.3333%;
+        }
+
+        .pendidikan {
+        padding-top: 14% !important;
+        padding-bottom: 2%;
+    }
+    }
+
+    @media (min-width: 993px) { 
+        .kedua-pendidikan .col {
+            flex: 0 0 25%;
+            max-width: 25%;
+        }
+    }
+
+    .row {
+        margin-right: 0 !important;
+        margin-left: 0 !important;
     }
 </style>

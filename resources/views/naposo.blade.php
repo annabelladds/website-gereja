@@ -1,103 +1,73 @@
 @extends('layouts.main')
-
 @section('container')
 <section class="naposo-section">
     <div class="naposo">
-        <div class="row py-4">
-          <!-- Baris Pertama -->
-          <div class="col text-center">
-            <img src="img/{{ $image }}" alt="Foto 1" class="naposo-gambar img-fluid mb-1">
-            <h6 class="naposo-judul">{{ $name }}</h6>
-            <p class="naposo-isi">{{ $jabatan }}</p>
-            <p class="naposo-isi">{{ $telp }}</p>
-            <p class="naposo-isi">{{ $sektor }}</p>
-          </div>
-        </div>
-        <div class="row kedua-naposo py-4">
-          <!-- Baris Kedua -->
-          <div class="col">
-            <img src="img/{{ $image2 }}" alt="Foto 2" class="naposo-gambar img-fluid mb-1">
-            <h6 class="naposo-judul">{{ $name2 }}</h6>
-            <p class="naposo-isi">{{ $jabatan2 }}</p>
-            <p class="naposo-isi">{{ $telp2 }}</p>
-            <p class="naposo-isi">{{ $sektor2 }}</p>
-          </div>
-          <div class="col">
-            <img src="img/{{ $image3 }}" alt="Foto 3" class="naposo-gambar img-fluid mb-1">
-            <h6 class="naposo-judul">{{ $name3 }}</h6>
-            <p class="naposo-isi">{{ $jabatan3 }}</p>
-            <p class="naposo-isi">{{ $telp3 }}</p>
-            <p class="naposo-isi">{{ $sektor3 }}</p>
-          </div>
-          <div class="col">
-            <img src="img/{{ $image4 }}" alt="Foto 4" class="naposo-gambar img-fluid mb-1">
-            <h6 class="naposo-judul">{{ $name4 }}</h6>
-            <p class="naposo-isi">{{ $jabatan4 }}</p>
-            <p class="naposo-isi">{{ $telp4 }}</p>
-            <p class="naposo-isi">{{ $sektor4 }}</p>
-          </div>
-          <div class="col">
-            <img src="img/{{ $image5 }}" alt="Foto 5" class="naposo-gambar img-fluid mb-1">
-            <h6 class="naposo-judul">{{ $name5 }}</h6>
-            <p class="naposo-isi">{{ $jabatan5 }}</p>
-            <p class="naposo-isi">{{ $telp5 }}</p>
-            <p class="naposo-isi">{{ $sektor5 }}</p>
-          </div>
-        </div>
-        <div class="row pertama-naposo py-4">
-          <!-- Baris Ketiga -->
-          <div class="col">
-            <img src="img/{{ $image6 }}" alt="Foto 6" class="naposo-gambar img-fluid mb-1">
-            <h6 class="naposo-judul">{{ $name6 }}</h6>
-            <p class="naposo-isi">{{ $jabatan6 }}</p>
-            <p class="naposo-isi">{{ $telp6 }}</p>
-            <p class="naposo-isi">{{ $sektor6 }}</p>
-          </div>
-          <div class="col">
-            <img src="img/{{ $image7 }}" alt="Foto 7" class="naposo-gambar img-fluid mb-1">
-            <h6 class="naposo-judul">{{ $name7 }}</h6>
-            <p class="naposo-isi">{{ $jabatan7 }}</p>
-            <p class="naposo-isi">{{ $telp7 }}</p>
-            <p class="naposo-isi">{{ $sektor7 }}</p>
-          </div>
-          <div class="col">
-            <img src="img/{{ $image8 }}" alt="Foto 8" class="naposo-gambar img-fluid mb-1">
-            <h6 class="naposo-judul">{{ $name8 }}</h6>
-            <p class="naposo-isi">{{ $jabatan8 }}</p>
-            <p class="naposo-isi">{{ $telp8 }}</p>
-            <p class="naposo-isi">{{ $sektor8 }}</p>
-          </div>
-        </div>
-          <div class="row kedua-naposo py-4">
-            <!-- Baris Keempat -->
-            <div class="col">
-              <img src="img/{{ $image9 }}" alt="Foto 9" class="naposo-gambar img-fluid mb-1">
-              <h6 class="naposo-judul">{{ $name9 }}</h6>
-              <p class="naposo-isi">{{ $jabatan9 }}</p>
-              <p class="naposo-isi">{{ $telp9 }}</p>
-              <p class="naposo-isi">{{ $sektor9 }}</p>
+        <div class="row py-4 justify-content-center">
+          <!-- Foto-foto Naposo -->
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3 text-center mb-3">
+            <div class="image-container">
+              <img src="img/St. Simanjuntak.jpeg" alt="St. M. Simanjuntak" class="naposo-gambar img-fluid mb-1">
             </div>
-            <div class="col">
-              <img src="img/{{ $image10 }}" alt="Foto 10" class="naposo-gambar img-fluid mb-1">
-              <h6 class="naposo-judul">{{ $name10 }}</h6>
-              <p class="naposo-isi">{{ $jabatan10 }}</p>
-              <p class="naposo-isi">{{ $telp10 }}</p>
-              <p class="naposo-isi">{{ $sektor10 }}</p>
+            <h6 class="naposo-judul">St. M. Simanjuntak</h6>
+            <p class="naposo-isi">Paniroi Naposo</p>
+            <p class="naposo-isi">088294527038</p>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3 text-center mb-3">
+            <div class="image-container">
+              <img src="img/Freddy.jpg" alt="Freddy Pakpahan" class="naposo-gambar img-fluid mb-1">
             </div>
-            <div class="col">
-              <img src="img/{{ $image11 }}" alt="Foto 11" class="naposo-gambar img-fluid mb-1">
-              <h6 class="naposo-judul">{{ $name11 }}</h6>
-              <p class="naposo-isi">{{ $jabatan11 }}</p>
-              <p class="naposo-isi">{{ $telp11 }}</p>
-              <p class="naposo-isi">{{ $sektor11 }}</p>
+            <h6 class="naposo-judul">Freddy Pakpahan</h6>
+            <p class="naposo-isi">Ketua Naposo</p>
+            <p class="naposo-isi">0895334340607</p>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3 text-center mb-3">
+            <div class="image-container">
+              <img src="img/Satrio.jpg" alt="Satrio Lumbantobing" class="naposo-gambar img-fluid mb-1">
             </div>
-            <div class="col">
-              <img src="img/{{ $image12 }}" alt="Foto 12" class="naposo-gambar img-fluid mb-1">
-              <h6 class="naposo-judul">{{ $name12 }}</h6>
-              <p class="naposo-isi">{{ $jabatan12 }}</p>
-              <p class="naposo-isi">{{ $telp12 }}</p>
-              <p class="naposo-isi">{{ $sektor12 }}</p>
+            <h6 class="naposo-judul">Satrio Lumbantobing</h6>
+            <p class="naposo-isi">Wakil Ketua Naposo</p>
+            <p class="naposo-isi">081397216590</p>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3 text-center mb-3">
+            <div class="image-container">
+              <img src="img/Falen.jpg" alt="Falentina br. Lumbantoruan" class="naposo-gambar img-fluid mb-1">
             </div>
+            <h6 class="naposo-judul">Falentina br. Lumbantoruan</h6>
+            <p class="naposo-isi">Sekretaris Naposo</p>
+            <p class="naposo-isi">082127201593</p>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3 text-center mb-3">
+            <div class="image-container">
+              <img src="img/Desna.jpg" alt="Desna br. Sitompul" class="naposo-gambar img-fluid mb-1">
+            </div>
+            <h6 class="naposo-judul">Desna br. Sitompul</h6>
+            <p class="naposo-isi">Bendahara Naposo</p>
+            <p class="naposo-isi">081260365137</p>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3 text-center mb-3">
+            <div class="image-container">
+              <img src="img/Hana.jpg" alt="Hana br. Pardede" class="naposo-gambar img-fluid mb-1">
+            </div>
+            <h6 class="naposo-judul">Hana br. Pardede</h6>
+            <p class="naposo-isi">Sie. Kerohanian</p>
+            <p class="naposo-isi">081296071318</p>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3 text-center mb-3">
+            <div class="image-container">
+              <img src="img/Riris.jpg" alt="Riris br. Silitonga" class="naposo-gambar img-fluid mb-1">
+            </div>
+            <h6 class="naposo-judul">Riris br. Silitonga</h6>
+            <p class="naposo-isi">Sie. Kerohanian</p>
+            <p class="naposo-isi">083898710581</p>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3 text-center mb-3">
+            <div class="image-container">
+              <img src="img/Josua.jpg" alt="Josua Pakpahan" class="naposo-gambar img-fluid mb-1">
+            </div>
+            <h6 class="naposo-judul">Josua Pakpahan</h6>
+            <p class="naposo-isi">Sie. Humas</p>
+            <p class="naposo-isi">085260105935</p>
+          </div>
         </div>
 </section>
 @endsection
@@ -108,36 +78,77 @@
         width: 100% !important;
         text-align: center;
         padding-top: 8%;
-        padding-bottom: 4%;
-        /* justify-content: center !important;
-        align-content: center !important; */
+        padding-bottom: 2%;
     }
 
     .naposo-judul {
         margin-bottom: 1px !important;
-        /* margin-top: 1px !important; */
         font-weight: bold !important;
-        text-align: center;
     }
 
     .naposo-isi{
         margin-bottom: 1px !important;
         font-size: 14px;
-        text-align: center;
     }
 
     .naposo-gambar {
         width: 150px !important;
         height: 210px !important;
+        object-fit: cover;
     }
 
-    .pertama-naposo {
-      padding-right: 29% !important;
-      padding-left: 29% !important;
+    .image-container {
+        overflow: hidden;
+        max-width: 100%;
+        max-height: 210px;
     }
 
-    .kedua-naposo {
-      padding-right: 22% !important;
-      padding-left: 22% !important;
+    @media (max-width: 576px) {
+        .kedua-naposo .col, .row .col {
+            flex: 0 0 100%;
+            max-width: 100%;
+            margin-bottom: 15px;
+        }
+
+        .naposo {
+        padding-top: 18% !important;
+        padding-bottom: 2%;
+    }
+    }
+
+    @media (min-width: 577px) and (max-width: 768px) {
+        .kedua-naposo .col {
+            flex: 0 0 50%;
+            max-width: 50%;
+        }
+
+        .naposo {
+        padding-top: 16% !important;
+        padding-bottom: 2%;
+    }
+    }
+
+    @media (min-width: 769px) and (max-width: 992px) {
+        .kedua-naposo .col, .row .col {
+            flex: 0 0 33.3333%;
+            max-width: 33.3333%;
+        }
+
+        .naposo {
+        padding-top: 14% !important;
+        padding-bottom: 2%;
+    }
+    }
+
+    @media (min-width: 993px) {
+        .kedua-naposo .col {
+            flex: 0 0 25%;
+            max-width: 25%;
+        }
+    }
+
+    .row {
+        margin-right: 0 !important;
+        margin-left: 0 !important;
     }
 </style>

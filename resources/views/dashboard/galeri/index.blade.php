@@ -1,16 +1,13 @@
 @extends('dashboard.layouts.main')
-
 @section('container')
 <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
-    <h1 class="h2">Galeri</h1>
+    <h4 class="h4">Galeri</h4>
 </div>
-
 @if(session()->has('success'))
 <div class="alert alert-success" role="alert">
     {{ session('success') }}
 </div>
 @endif
-
 <div class="table-responsive small">
     <a href="/dashboard/galeri/create" class="btn btn-primary mb-3">Tambah Dokumentasi</a>
     <table class="table table-striped table-sm">
@@ -53,7 +50,6 @@
 @endsection
 
 <style>
-/* Base styles */
 .dashboard-detail,
 .dashboard-edit,
 .dashboard-delete {
@@ -93,8 +89,7 @@
     background: none;
 }
 
-/* Responsive styles */
-@media (max-width: 576px) { /* Phones */
+@media (max-width: 576px) {
     .actions {
         display: flex;
         flex-direction: column;
@@ -108,7 +103,7 @@
     }
 }
 
-@media (min-width: 577px) and (max-width: 768px) { /* Tablets */
+@media (min-width: 577px) and (max-width: 768px) {
     .actions {
         display: flex;
         flex-direction: column;
@@ -121,14 +116,14 @@
     }
 }
 
-@media (min-width: 769px) and (max-width: 992px) { /* Small laptops */
+@media (min-width: 769px) and (max-width: 992px) {
     .actions {
         display: flex;
         flex-direction: row;
     }
 }
 
-@media (min-width: 993px) { /* Larger devices */
+@media (min-width: 993px) {
     .actions {
         display: flex;
         flex-direction: row;

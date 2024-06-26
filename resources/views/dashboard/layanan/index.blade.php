@@ -1,18 +1,14 @@
 @extends('dashboard.layouts.main')
-
 @section('container')
 <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
-    <h1 class="h2">Jemaat Baru</h1>
+    <h4 class="h4">Jemaat Baru</h4>
   </div>
-
   @if(session()->has('success'))
   <div class="alert alert-success" role="alert">
     {{ session('success') }}
   </div>
   @endif
-
   <div class="table-responsive small">
-    {{-- <a href="/dashboard/layanan/create" class="btn btn-primary mb-3">Tambah Berita Baru</a> --}}
     <table class="table table-striped table-sm">
       <thead>
         <tr>
@@ -34,20 +30,15 @@
             <td>{{ $layanan->phone }}</td>
             <td>{{ $layanan->address }}</td>
             <td>{{ $layanan->church }}</td>
-            {{-- <td>{{ $layanan->file }}</td> --}}
             <td>
               @if($layanan->file)
-              {{-- <a href="{{ Storage::url('public/files/' . $layanan->file) }}" class="dashboard-download border-0" download><span data-feather="download"></span></a> --}}
               <a class="dashboard-download border-0" href="{{ asset('storage/' . $layanan->file) }}"><span data-feather="download"></span></a>
-              {{-- <a href="{{ asset('storage/files/' . $layanan->file) }}" class="dashboard-download border-0" download><span data-feather="download"></span></a> --}}
               @else
               Tidak Ada File
               @endif
             </td>
             <td>{{ $layanan->family }}</td>
             <td>
-                {{-- <button href="/dashboard/layanan/{{ $layanan->slug }}" class="feather-icon dashboard-detail border-0"><span data-feather="eye"></span></button>
-                <button href="/dashboard/layanan/{{ $layanan->slug }}/edit" class="dashboard-edit border-0"><span data-feather="edit"></span></button> --}}
                 <form action="/dashboard/layanan/{{ $layanan->id }}" method="post" class="d-inline">
                 @method('delete')
                 @csrf
@@ -59,13 +50,10 @@
       </tbody>
     </table>
   </div>
-
 @endsection
 
 <style>
-
   .dashboard-download {
-    /* color: var(--font-600, #00397D) !important; */
     color: var(--font-600, #004BA4) !important;
     width: auto;
     margin-right: 4px;
@@ -73,7 +61,6 @@
   }
 
   .dashboard-download:hover {
-    /* color: var(--font-600, #005EC6) !important; */
     color: var(--font-600, #579AFF) !important;
     width: auto;
     margin-right: 4px;
@@ -81,7 +68,6 @@
   }
 
   .dashboard-detail {
-    /* color: var(--font-600, #00397D) !important; */
     color: var(--font-600, #004BA4) !important;
     width: auto;
     margin-right: 4px;
@@ -89,7 +75,6 @@
   }
 
   .dashboard-detail:hover {
-    /* color: var(--font-600, #005EC6) !important; */
     color: var(--font-600, #579AFF) !important;
     width: auto;
     margin-right: 4px;
